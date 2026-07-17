@@ -31,7 +31,48 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 
 ## ⚙️ Core de Funções Integradas (`<f>`)
 
-O interpretador suporta 40 funções utilitárias que estendem o HTML padrão em ferramentas complexas de sistema:
+O interpretador suporta 40 funções utilitárias que estendem o HTML padrão em ferramentas complexas de sistema: 
+
+Desvio de meteoros
+<f> mapa cor "blue" <f>
+<f> jogador cor "yellow" <f>
+<f> obstaculos cor "red" <f>
+<f> jogo2D <f>
+
+jogo estilo dinossauro quando acaba a internet ou mario 
+<f> marioCenario "[https://link.com/fundo.png](https://link.com/fundo.png)" <f>
+<f> marioJogador "[https://link.com/jogador.png](https://link.com/jogador.png)" <f>
+<f> marioInimigo "[https://link.com/inimigo.png](https://link.com/inimigo.png)" <f>
+<f> marioChao "[https://link.com/chao.png](https://link.com/chao.png)" <f>
+<f> mario <f>
+
+Tetris
+<f> tetrisFundo cor "black" <f>
+<f> tetrisBloco "[https://link.com/bloco.png](https://link.com/bloco.png)" <f>
+<f> tetris <f>
+
+Codificação pra jogo 3D
+bloco3D [X] [Y] [Z] [Largura] [Altura] [Profundidade] "Cor_ou_Link_Textura" [Comportamento] ["Mensagem_Opcional"]
+
+Jogo de parkur exemplo 3D
+<fundo> #16161a
+<t> 🛠️ Meu Jogo de Parkour 3D 🛠️ <t> #00e1ff
+
+# Configuração da skin do Jogador (Suporta upload de arquivo local também!)
+<f> jogador3D "[https://img.icons8.com/emoji/96/dog-emoji.png](https://img.icons8.com/emoji/96/dog-emoji.png)" <f>
+
+# Textura padrão do chão
+<f> mapa3D "#55aa55" <f>
+
+# Construção das plataformas do mapa
+bloco3D 0 0 0 5 1 5 "#55aa55" normal
+bloco3D 0 1.5 -7 3 1 3 "[https://img.icons8.com/color/48/minecraft-grass-block.png](https://img.icons8.com/color/48/minecraft-grass-block.png)" normal
+bloco3D 0 -2 -14 8 1 8 "#ff3300" elimina "🔥 A lava derreteu-te! Voltaste ao início!"
+bloco3D 4 3 -21 3 1 3 "#00ffd5" notifica "📢 Checkpoint Secreto Ativado!"
+bloco3D 0 5 -28 4 1 4 "#ffd700" notifica "🏆 PARABÉNS! Completaste o Parkour!"
+
+# Inicialização da Engine 3D
+<f> jogo3D <f>
 
 * **Visualização em Grelha (Grid):** ```text
   <f> grid 3 3 <f>
