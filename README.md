@@ -76,3 +76,29 @@ bloco3D 0 5 -28 4 1 4 "#ffd700" notifica "🏆 PARABÉNS! Completaste o Parkour!
 
 * **Visualização em Grelha (Grid):** ```text
   <f> grid 3 3 <f>
+📄 Sistema de Páginas e Navegação (<page>)O RydenScript permite criar aplicações multipáginas e redes de telas de forma declarativa e instantânea, sem a necessidade de escrever scripts adicionais para roteamento ou controle de exibição.📌 Como Funciona:Use a tag <pageN> para definir o início de uma nova tela (onde N é o número da página, ex: <page1>, <page2>, etc.).A <page1> é sempre carregada por padrão como a tela principal.Para navegar entre as páginas, basta indicar o destino no botão usando a instrução <f> pageN.🛠️ Sintaxe dos ComandosTag / InstruçãoDescriçãoExemplo<page1>, <page2>, ...Delimita um novo bloco de página/tela.<page1><b> Texto <b> <f> pageNCria um botão interativo que esconde a tela atual e exibe a página N.<b> Ir para o Feed <b> <f> page2💻 Exemplo Prático (Rede Social / App Multi-telas)Plaintext<page1>
+<fundo> #18191a
+<t> 👤 Login / Entrada <t> #e4e6eb
+<p> Bem-vindo à rede em RydenScript! <p> #b0b3b8
+<b> Entrar no Feed <b> <f> page2 cor #2374e1
+<b> Ver Perfil <b> <f> page3 cor #3a3b3c
+
+<page2>
+<fundo> #18191a
+<t> 📰 Feed Principal <t> #e4e6eb
+<p> O que você está pensando hoje? <p> #b0b3b8
+<b> Ir para Notificações <b> <f> page4 cor #3a3b3c
+<b> Voltar para Entrada <b> <f> page1 cor #e41e3f
+
+<page3>
+<fundo> #18191a
+<t> ⚙️ Seu Perfil <t> #e4e6eb
+<p> Nome do Usuário: DevRyden <p> #b0b3b8
+<b> Voltar ao Feed <b> <f> page2 cor #2374e1
+
+<page4>
+<fundo> #18191a
+<t> 🔔 Notificações <t> #e4e6eb
+<p> Você não possui novas notificações no momento. <p> #b0b3b8
+<b> Voltar ao Feed <b> <f> page2 cor #2374e1
+✨ Destaques do Recurso:Páginas Infinitas: Crie quantas telas precisar (<page1> até <page999>).Navegação Limpa: A transição é instantânea e oculta automaticamente os elementos das outras telas.Suporte a Componentes: Cada página pode conter gráficos 3D (<f> jogo3D <f>), botões, vídeos, imagens ou qualquer outro comando da linguagem!
