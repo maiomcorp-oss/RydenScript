@@ -34,35 +34,35 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 O interpretador suporta 40 funções utilitárias que estendem o HTML padrão em ferramentas complexas de sistema: 
 
 Desvio de meteoros
-<f> mapa cor "blue" <f>
-<f> jogador cor "yellow" <f>
-<f> obstaculos cor "red" <f>
-<f> jogo2D <f>
+'<f> mapa cor "blue" <f>
+'<f> jogador cor "yellow" '<f>
+'<f> obstaculos cor "red" '<f>
+'<f> jogo2D '<f>
 
 jogo estilo dinossauro quando acaba a internet ou mario 
-<f> marioCenario "[https://link.com/fundo.png](https://link.com/fundo.png)" <f>
-<f> marioJogador "[https://link.com/jogador.png](https://link.com/jogador.png)" <f>
-<f> marioInimigo "[https://link.com/inimigo.png](https://link.com/inimigo.png)" <f>
-<f> marioChao "[https://link.com/chao.png](https://link.com/chao.png)" <f>
-<f> mario <f>
+'<f> marioCenario "[https://link.com/fundo.png](https://link.com/fundo.png)" '<f>
+'<f> marioJogador "[https://link.com/jogador.png](https://link.com/jogador.png)" '<f>
+'<f> marioInimigo "[https://link.com/inimigo.png](https://link.com/inimigo.png)" '<f>
+'<f> marioChao "[https://link.com/chao.png](https://link.com/chao.png)" '<f>
+'<f> mario <f>
 
 Tetris
-<f> tetrisFundo cor "black" <f>
-<f> tetrisBloco "[https://link.com/bloco.png](https://link.com/bloco.png)" <f>
-<f> tetris <f>
+'<f> tetrisFundo cor "black" <f>
+'<f> tetrisBloco "[https://link.com/bloco.png](https://link.com/bloco.png)" '<f>
+'<f> tetris <f>
 
 Codificação pra jogo 3D
 bloco3D [X] [Y] [Z] [Largura] [Altura] [Profundidade] "Cor_ou_Link_Textura" [Comportamento] ["Mensagem_Opcional"]
 
 Jogo de parkur exemplo 3D
 <fundo> #16161a
-<t> 🛠️ Meu Jogo de Parkour 3D 🛠️ <t> #00e1ff
+'<t> 🛠️ Meu Jogo de Parkour 3D 🛠️ '<t> #00e1ff
 
 # Configuração da skin do Jogador (Suporta upload de arquivo local também!)
-<f> jogador3D "[https://img.icons8.com/emoji/96/dog-emoji.png](https://img.icons8.com/emoji/96/dog-emoji.png)" <f>
+'<f> jogador3D "[https://img.icons8.com/emoji/96/dog-emoji.png](https://img.icons8.com/emoji/96/dog-emoji.png)" <f>
 
 # Textura padrão do chão
-<f> mapa3D "#55aa55" <f>
+'<f> mapa3D "#55aa55" <f>
 
 # Construção das plataformas do mapa
 bloco3D 0 0 0 5 1 5 "#55aa55" normal
@@ -72,7 +72,7 @@ bloco3D 4 3 -21 3 1 3 "#00ffd5" notifica "📢 Checkpoint Secreto Ativado!"
 bloco3D 0 5 -28 4 1 4 "#ffd700" notifica "🏆 PARABÉNS! Completaste o Parkour!"
 
 # Inicialização da Engine 3D
-<f> jogo3D <f>
+'<f> jogo3D '<f>
 
 * **Visualização em Grelha (Grid):** ```text
   <f> grid 3 3 <f>
@@ -107,31 +107,29 @@ bloco3D 0 5 -28 4 1 4 "#ffd700" notifica "🏆 PARABÉNS! Completaste o Parkour!
 vamos la eu primeiro vou falar as regras não precisa de parenteses colchetes ou qualquer outra coisa so <> e sempre coloque as tags em linhas proprias so a tag <f>, que não precisa se ela ter que ser a configuração de alguma coisa mais eu sempre recomendo quando começar o codigo sempre coloca a tag <page1> porque ela vai ser a sua primeira pagina em seguida a tag <fundo> ela define a cor de fundo da sua pagina por exemplo "<fundo> blue" vc esta definindo que ela sera azul o fundo azul mais pode ser qualquer cor em ingles, e a tag "<t>" e basicamente o seu titulo e vc tambem pode mudar a cor dele por exemplo "<t> meu titulo <t> red" ou seja seu titulo e vermelho agora a tag <b> ela e simplesmente um botão e vc pode usar ela pra dar um alerta na tela ou passar pra sua pagina 2 ou seja pra <page2> mais vou mostrar como da um alert na tela e tambem a de mudar a cor do botão por exemplo um pouco complexo porque vc precisa usar a tag <f> mais pra explicar rapidamente oque a tag <f> faz, ela vem de função ela e a função de alguma coisa e assim como <b> e botão <fundo> e obviamente o fundo da pagina mais com a tag <f> vc pode escolher oque vai acontecer quando clicar em um botão ou em outros comandos aqui vai o exemplo de um botão verde que apos ser apertado lança um alerta na tela "<b> botão <b> <f> alert "ei vc clicou no botão" <f>", basicamente eu acabei de programar um botão chamado botão que quando clica nele lança uma mensagem alerta na tela dizendo vc clicou no botão , e passar pra pagina 2 tambem e facil aqui vai o exemplo "<b> passar pra pagina 2 <b> <f> page2 <f>", e apos clicado passa pra pagina dois, mais aqui vai oque e a pagina dois e que agora quando eu disse no inicio sempre tem que começar com pagina um a "<page1>" e o botão que ia pra pagina 2 ta la agora e so fechar a tag digitando mais um "<page1>" vc fechou essa base agora vc vai escolher oque tem na pagina 2 e vc pode definir ela do jeito que quiser que nem na pagina 1 e sim vc pode fazer paginas infinitas , aqui eu expliquei o basico de RydenScript obrigado por ler ate aqui.
 ## Novos comandos (Tags mais novas)
 Calculdora adicionada : <f> calculadora <f>
-codigo-secreto adicionado, exemplo: <page1>
-<fundo> black
-<t> Tela de Login <t> white
+pagiamento adicionado exemplo: <page1>
+'<t> pesquise "970" para descobrir '<t> gray
+'<fundo> black
+'<f> pagiamento 1234 painelSecreto | 970 page2 |
+'<page1>
+'<page2>
+'<t> ola vc descobriu essa pagina '<t> gray
+'<page2>
 
-<f> codigo-secreto 123 page2
-<page1>
-<page2> painel-secreto
-<t> Bem-vindo à Área Secreta! <t> gold
-<p> Conseguiste decifrar o acesso <p> white
-<page2>
-.
-interface adicionada exemplo : <page1>
-<fundo> #0f172a
+interface adicionada exemplo : '<page1>
+'<fundo> #0f172a
 
-<f> interface retangulo | cor:#1e293b | largura:100% | altura:60px <f>
-<t> RydenScript <t> white
+'<f> interface retangulo | cor:#1e293b | largura:100% | altura:60px <f>
+'<t> RydenScript <t> white
 
-<p> Bem-vindo à página principal estruturada com componentes visuais! <p> #94a3b8
+'<p> Bem-vindo à página principal estruturada com componentes visuais! <p> #94a3b8
 
-<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
-<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
-<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
+'<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
+'<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
+'<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
 
-<f> interface retangulo | cor:#020617 | largura:100% | altura:40px <f>
-<p> © 2026 RydenScript - Todos os direitos reservados <p> #64748b
+'<f> interface retangulo | cor:#020617 | largura:100% | altura:40px <f>
+'<p> © 2026 RydenScript - Todos os direitos reservados <p> #64748b
 
 <page1>
 .
