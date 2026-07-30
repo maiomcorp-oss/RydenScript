@@ -128,10 +128,69 @@ interface adicionada exemplo : '<page1>
 '<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
 '<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
 
-'<f> interface retangulo | cor:#020617 | largura:100% | altura:40px <f>
-'<p> © 2026 RydenScript - Todos os direitos reservados <p> #64748b
 
+# Criação complexa e maioria das tags explicadas
+# Vamos gerar um arquivo README.md real e estruturado para o projeto RydenScript
+readme_content = """# 🎮 RydenScript
+
+Uma engine de jogos autoral e interpretador leve baseado em texto, desenhado para criar páginas interativas, menus e jogos 2D estilo plataforma de forma totalmente simples e intuitiva.
+
+---
+
+## 🚀 Como Funciona a Sintaxe
+
+O RydenScript utiliza gatilhos simples com o prefixo `<f>` para executar comandos visuais, criar textos, botões de navegação e instanciar o motor de blocos 2D.
+
+### Guia Rápido de Comandos
+
+| Comando / Tag | Descrição | Exemplo de Uso |
+| :--- | :--- | :--- |
+| **`<pageX>`** | Define o início de uma nova página/cenário independente. | `<page1>` |
+| **`<fundo>`** | Define a cor de fundo exclusiva da página atual (ex: `#111111`). | `<fundo> #111111` |
+| **`<t>`** | Cria um título estilizado com cor personalizada. | `<t> #fff Meu Jogo` |
+| **`<p>`** | Cria um parágrafo de texto com cor personalizada. | `<p> #ccc Bem-vindo ao jogo!` |
+| **`<b>`** | Cria um botão interativo de navegação ou ação. | `<b> Ir para a Fase 2 <f> page2` |
+
+---
+
+## 📦 Biblioteca: `bloco2D`
+
+O comando `bloco2D` é o coração da criação de mapas, plataformas e interações no RydenScript. Ele aceita parâmetros de largura, altura, posição X/Y, visual (cor hexadecimal ou link direto de imagem) e o tipo de comportamento.
+
+> **⚠️ Nota importante sobre formatação no GitHub:** No Markdown padrão, algumas tags angulares como `<page>` ou `<f>` podem ser ocultadas pelo renderizador se colarem com texto puro. Por isso, utilize sempre blocos de código (` ```
+```text?code_stdout&code_event_index=2
+README.md gerado com sucesso!
+
+```text `) ou mantenha espaçamentos claros para garantir que a documentação exiba os caracteres perfeitamente!
+
+### Tabela de Tipos de Blocos 2D
+
+| Tipo (`tipo`) | Descrição e Comportamento | Parâmetro Extra (`extra`) | Exemplo de Código |
+| :--- | :--- | :--- | :--- |
+| **`normal`** | Cria um bloco sólido de colisão (chão, paredes ou plataformas). Suporta cor em HEX ou link de imagem. | *Nenhum* | `<f> bloco2D 600 20 0 350 #444444 normal` |
+| **`player`** | Cria o personagem principal controlável com física de gravidade, pulo (Espaço/W) e movimentação (A/D). | *Nenhum* | `<f> bloco2D 40 40 50 300 #00ffcc player` |
+| **`pagina`** | Funciona como um portal. Se o player colidir com ele, muda instantaneamente para outra página do projeto. | ID de destino (ex: `page2`) | `<f> bloco2D 50 50 200 300 https://site.com/img.png pagina page2` |
+| **`superpulo`** | Bloco especial que aumenta temporariamente a força do pulo do player ao ser tocado. | *Nenhum* | `<f> bloco2D 50 20 400 250 #ffff00 superpulo` |
+| **`elimina`** | Obstáculo ou armadilha perigosa que reseta a posição do player ao encostar. | *Nenhum* | `<f> bloco2D 50 20 150 280 #ff3300 elimina` |
+
+---
+
+## 📝 Exemplo Completo de Jogo no RydenScript
+
+Cole o código abaixo no seu interpretador ou arquivo `.rds` para testar um cenário completo com menu, física e transição de páginas:
+
+```text
 <page1>
-.
+<fundo> #0f172a
+<t> #38bdf8 Menu Principal - RydenScript
+<p> #94a3b8 Escolha uma opção para começar:
+<b> Iniciar Aventura <f> page2
 
-Obrigado por ver.
+<page2>
+<fundo> #111111
+<t> #fff Fase 1: O Labirinto
+<p> #ccc Use A e D para andar e W/Espaço para pular.
+
+<f> bloco2D 600 20 0 350 #444444 normal
+<f> bloco2D 50 50 200 300 https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg pagina page1
+<f> bloco2D 40 40 50 300 #00ffcc player
