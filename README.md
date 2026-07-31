@@ -194,3 +194,41 @@ Cole o código abaixo no seu interpretador ou arquivo `.rds` para testar um cen�
 <f> bloco2D 600 20 0 350 #444444 normal
 <f> bloco2D 50 50 200 300 https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg pagina page1
 <f> bloco2D 40 40 50 300 #00ffcc player
+
+# ⚙️ Administract Coder — Documentação Oficial & Comandos de Automação
+
+O **Administract Coder** é a linguagem de automação, painéis e controle administrativo do ecossistema Maiom Corp. Integrada diretamente ao motor do RydenScript, ela capacita o desenvolvedor a estruturar sistemas de acesso, fluxos de dados, criação de arquivos, painéis de gerenciamento e ferramentas utilitárias avançadas.
+
+---
+
+## 📋 Tabela de Comandos de Administração e Automação
+
+| Comando / Sintaxe | Descrição / Função no Sistema | Exemplo de Uso |
+| :--- | :--- | :--- |
+| `<fundo> [cor]` | Define a cor de fundo padrão da página ou painel atual. | `<fundo> #f4f6f9` |
+| `<t> [texto] <t> [cor]` | Cria um título formatado com a cor personalizada. | `<t> Central <t> #333` |
+| `<p> [texto] <p> [cor]` | Cria um parágrafo de texto descritivo. | `<p> Descrição <p> #666` |
+| `<f> administract>c> gerar [arquivo] \| destino [local] \| conteudo "[texto]"` | Automatiza a criação e geração instantânea de arquivos físicos de diferentes estruturas. | `<f> administract>c> gerar main.js \| destino area_trabalho \| conteudo "console.log('Online!');"` |
+| `<f> administract>c> mensagem "[texto]"` | Dispara mensagens e alertas automatizados do sistema do Administract Coder. | `<f> administract>c> mensagem "Sistema iniciado!"` |
+| `<f> administract>c> abrir [aplicativo/url] \| espera [segundos]` | Automatiza a abertura de programas executáveis ou páginas web com tempo de espera programado. | `<f> administract>c> abrir notepad.exe \| espera 3` |
+| `<f> pagiamento [senha] [pagina]` | Cria códigos de acesso rápidos para redirecionar o fluxo e proteger áreas do sistema. | `<f> pagiamento 1234 painelSecreto` |
+| `<f> salvarLocal "[chave]"` | Gerencia o armazenamento local (`localStorage`) salvando e carregando dados direto na interface. | `<f> salvarLocal "usuarioConfig"` |
+| `<f> cronometro` | Aciona um cronômetro completo de precisão com controles de iniciar, pausar e resetar. | `<f> cronometro` |
+
+---
+
+## 🚀 Exemplo Completo de Script com o Administract Coder
+
+```html
+<fundo> #f4f6f9
+<page1>
+<t> Central de Automação Avançada - Maiom Corp <t> #333
+<p> Crie diferentes estruturas de arquivos instantaneamente: <p> #666
+
+<f> administract>c> gerar main.js | destino area_trabalho | conteudo "console.log('Sistema Maiom Corp Online!');"
+<f> administract>c> gerar notas.txt | destino documentos | conteudo "Lista de tarefas pendentes do projeto."
+<f> administract>c> gerar config.json | destino pasta_atual | conteudo "{\n  \"versao\": \"2.0\",\n  \"status\": \"ativo\"\n}"
+
+<f> administract>c> mensagem "Olá Daniel! Sistema da Maiom Corp iniciado com sucesso."
+<f> administract>c> abrir notepad.exe | espera 3
+<f> administract>c> abrir [https://www.google.com](https://www.google.com) | espera 5
