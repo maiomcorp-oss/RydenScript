@@ -232,3 +232,29 @@ O **Administract Coder** é a linguagem de automação, painéis e controle admi
 <f> administract>c> mensagem "Olá Daniel! Sistema da Maiom Corp iniciado com sucesso."
 <f> administract>c> abrir notepad.exe | espera 3
 <f> administract>c> abrir [https://www.google.com](https://www.google.com) | espera 5
+
+# 🌐 RydenScript - Documentação de Recursos (v2.0)
+
+Bem-vindo à documentação oficial dos recursos do **RydenScript**. Abaixo estão detalhadas as especificações, sintaxes e descrições da nova tag de rede **P2P** e da função de navegação do **menu**.
+
+## 📋 sistema de comunicação P2P e menu lateral
+
+| Recurso / Componente | Sintaxe no Código | Descrição / Comportamento |
+| :--- | :--- | :--- |
+| **P2P (ID do Nó)** | `<P2P id>` | Gera e exibe na tela o ID aleatório exclusivo do usuário na rede descentralizada. |
+| **P2P (Painel de Envio)** | `<P2P input>` | Insere o painel interativo de comando para digitar o ID do destino, mensagem e enviar. |
+| **P2P (Histórico/Chat)** | `<P2P chat>` | Renderiza a janela de histórico onde as mensagens trocadas via WebRTC aparecem em tempo real. |
+| **Função Menu** | `<f> menu \| cor: [hex] \| cormenu: [hex] \| paginas: Nome:pageID,...` | Cria dinamicamente a barra de navegação superior customizada, permitindo alternar entre as páginas do script. |
+
+---
+
+### 💡 Exemplo de Uso Prático (RydenScript com Menu e P2P)
+
+```text
+<page1>
+<f> menu | cor: #ff5722 | cormenu: #222 | paginas: Home:page1, Creditos:page2, Videos:page3
+<t> Olá mundo! <t>
+<p> Compartilhe seu ID P2P: <p>
+<P2P id>
+<P2P input>
+<P2P chat>
