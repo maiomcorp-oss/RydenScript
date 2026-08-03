@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>RydenScript - Central de Versões</title>
+    <link rel="icon" type="image/png" href="RDS.ico">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #dbeafe);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: #fff;
+            max-width: 720px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            text-align: center;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .logo {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 18px;
+            border: 3px solid #2563eb;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 28px;
+            font-size: 1.05rem;
+        }
+
+        .version-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            text-align: left;
+        }
+
+        .version-box {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 20px 22px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .version-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+        }
+
+        .version-name {
+            font-weight: bold;
+            color: #111;
+            font-size: 1rem;
+        }
+
+        a.download-btn {
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        a.download-btn:hover {
+            background: #1e40af;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="RDS.ico" alt="Logo" class="logo">
+        <h1>RydenScript</h1>
+        <p>Central de downloads das versões do compilador:</p>
+
+        <div class="version-container">
+            <div class="version-box">
+                <span class="version-name">RydenScript v1.0.0</span>
+                <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v1.0.0/RydenScript.v1.0.0.exe" download class="download-btn">Baixar</a>
+            </div>
+            <div class="version-box">
+                <span class="version-name">RydenScript v2.0.0</span>
+                <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v2.0.0/RydenScript.v2.0.0.exe" class="download-btn">Baixar</a>
+            </div>
+            <div class="version-box">
+                <span class="version-name">RydenScript v3.0.0</span>
+                <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v3.0.0/RydenScript.v3.0.0.exe" class="download-btn">Baixar</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 RydenScript. Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
