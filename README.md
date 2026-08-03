@@ -19,15 +19,14 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 
 | Comando | Função | Exemplo |
 | :--- | :--- | :--- |
+| `<page1>` | Cria e alterna entre páginas no app | `<page1>` |
 | `<fundo>` | Define a cor de fundo da página | `<fundo> #16161a` |
-| `<t>` | Cria um título estruturado com cor customizada | `<t> Meu Universo <t> #00ffd5` |
-| `<p>` | Cria um parágrafo de texto com cor | `<p> Bem-vindo à nova era <p> #ffffff` |
-| `<b>` | Cria um botão com eventos nativos de alerta e cores | `<b> Alerta <b> <f> alert Olá! <f> cor red` |
-| `<image>` | Renderiza uma imagem responsiva | `<image> url "https://link.com/foto.png" <image>` |
-| `<video>` | Cria um player de vídeo nativo | `<video> url "https://link.com/video.mp4" <video>` |
-| `<iframe>` | Incorpora um site externo de forma isolada | `<iframe> url "https://exemplo.com" <iframe>` |
-
----
+| `<t>` | Cria um título customizado (cor, fonte, borda) | `<t> Título <t> cor: #00ffd5 | fonte: Arial | borda: 2px solid #00ffd5` |
+| `<p>` | Cria um parágrafo customizado | `<p> Texto <p> cor: #fff | fonte: Roboto | borda: none` |
+| `<b>` | Cria um botão customizado com ações e navegação | `<b> Entrar <b> cor: #1a73e8 | fonte: sans-serif | page2` |
+| `<P2P id>` | Exibe o ID P2P exclusivo do usuário | `<P2P id>` |
+| `<P2P chat>` | Cria um histórico de chat P2P em tempo real | `<P2P chat>` |
+| `<P2P enviardados>` | Envia pacotes/arquivos direto para outro ID | `<P2P enviardados> "dados.txt" | conteudo: "Olá" | id "XYZ"` |
 
 ## ⚙️ Core de Funções Integradas (`<f>`)
 
