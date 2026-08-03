@@ -2,61 +2,131 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Download RydenScript</title>
-    <link rel="icon" type="image/jpeg" href="RDS.ico">
+    <title>RydenScript - Central de Versões</title>
+    <link rel="icon" type="image/png" href="RDS.ico">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1f4037, #99f2c8);
-            color: #fff;
-            text-align: center;
+        /* Reset básico */
+        * {
             margin: 0;
-            padding: 50px;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: #fff;
+            max-width: 700px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+        }
+
         h1 {
-            font-size: 2.5em;
-            margin-top: 20px;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 8px;
         }
-        .download-button {
-            padding: 15px 30px;
-            font-size: 20px;
-            background: #ff6f61;
+
+        p {
+            color: #555;
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .version-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .version-box {
+            background: #f9fafb;
+            border: 1px solid #ddd;
+            padding: 18px 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .version-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .version-name {
+            font-weight: bold;
+            color: #111;
+        }
+
+        a.download-btn {
+            background: #2563eb;
             color: white;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
+            padding: 10px 18px;
             text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.2s ease;
         }
-        .download-button:hover {
-            background: #ff3b2e;
-            transform: scale(1.05);
+
+        a.download-btn:hover {
+            background: #1e40af;
         }
-        .download-image {
-            max-width: 250px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-            transition: transform 0.3s ease;
-        }
-        .download-image:hover {
-            transform: scale(1.08);
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <!-- Imagem com link -->
-    <div>
-        <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v1.0.0/RydenScript.exe">
-            <img src="https://raw.githubusercontent.com/maiomcorp-oss/RydenScript/refs/heads/main/RDS.ico" alt="Download RydenScript" class="download-image">
-        </a>
+
+    <div class="container">
+        <img src="RDS.ico" alt="Logo" class="logo">
+        <h1>RydenScript</h1>
+        <p>Central de downloads das versões do compilador:</p>
+
+        <div class="version-container">
+            <div class="version-box">
+                <span class="version-name">RydenScript v1.0.0</span>
+                <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v1.0.0/RydenScript.v1.0.0.exe" download class="download-btn">Baixar</a>
+            </div>
+            <!-- Exemplo de próxima versão -->
+            <div class="version-box">
+                <span class="version-name">RydenScript v2.0.0</span>
+                <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v2.0.0/RydenScript.v2.0.0.exe" class="download-btn">Em breve</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 RydenScript. Todos os direitos reservados.
+        </footer>
     </div>
 
-    <h1>Download RydenScript</h1>
-    
-    <!-- Botão que redireciona -->
-    <a href="https://github.com/maiomcorp-oss/RydenScript/releases/download/v1.0.0/RydenScript.exe" class="download-button">Download</a>
 </body>
 </html>
