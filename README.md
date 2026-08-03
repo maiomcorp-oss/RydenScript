@@ -257,3 +257,104 @@ Bem-vindo à documentação oficial dos recursos do **RydenScript**. Abaixo est�
 <P2P id>
 <P2P input>
 <P2P chat>
+
+# 🚀 RydenScript v3.0.0
+
+Bem-vindo à documentação oficial da versão **v3.0.0** do **RydenScript**! Esta versão traz um salto evolutivo na estilização e no posicionamento de elementos, permitindo que criues interfaces completas de forma limpa, direta e com controle absoluto de design.
+
+---
+
+## 🎨 O que há de novo na v3.0.0?
+
+Na v3.0.0, os componentes principais ganharam suporte total a **estilização personalizada**, **família de fontes**, **cores customizadas** e **posicionamento absoluto por coordenadas (X e Y)**.
+
+---
+
+---
+
+## 🎨 O que há de novo na v3.0.0?
+
+- Suporte total a **estilização personalizada**
+- Definição de **família de fontes**
+- **Cores customizadas**
+- **Posicionamento absoluto** por coordenadas (X e Y)
+
+---
+
+## 📖 Guia de Sintaxe e Comandos
+
+| **Elemento** | **Sintaxe** | **Parâmetros Suportados** | **Exemplo** |
+|--------------|-------------|---------------------------|-------------|
+| **Título (`<t>`)** | `<t> Texto <t> cor | tamanho | fonte | x | y` | • cor<br>• tamanho<br>• fonte<br>• x<br>• y | `<t> O Meu Título <t> cor:"#ff5722" | tamanho:"32px" | fonte:"Courier New" | x:"50px" | y:"20px"` |
+| **Parágrafo (`<p>`)** | `<p> Texto <p> cor | tamanho | fonte | x | y` | • cor<br>• tamanho<br>• fonte<br>• x<br>• y | `<p> Este é o parágrafo <p> cor:"#333" | tamanho:"16px" | fonte:"Arial" | x:"50px" | y:"80px"` |
+| **Botão (`<b>`)** | `<b> Texto <b> cor | fonte | x | y | ação` | • cor<br>• fonte<br>• x<br>• y<br>• alert / page2 | `<b> Clica Aqui <b> cor:"#4caf50" | fonte:"Arial" | x:"50px" | y:"140px" | alert "Sucesso!"` |
+
+---
+
+## 🛠️ Exemplo Completo de Código (v3.0.0)
+
+```rydenscript
+// Configuração da Página Inicial
+<t> Painel de Controle <t> cor:"#2c3e50" | tamanho:"28px" | fonte:"Arial" | x:"40px" | y:"20px"
+
+<p> Bem-vindo ao ecossistema moderno do RydenScript v3.0.0. <p> cor:"#555555" | tamanho:"15px" | fonte:"Courier New" | x:"40px" | y:"70px"
+
+<b> Entrar no Sistema <b> cor:"#27ae60" | fonte:"Arial" | x:"40px" | y:"130px" | alert "Bem-vindo ao painel!"
+
+<b> Ir para Página 2 <b> cor:"#2980b9" | fonte:"Arial" | x:"40px" | y:"180px" | page2
+
+
+### 1. Títulos (`<t>`)
+Agora podes definir cores, tamanhos, fontes personalizadas e a exata posição na tela do teu título.
+
+* **Sintaxe padrão:**
+  ```rydenscript
+  <t> O Meu Título Incrível <t> cor: "#ff5722" | tamanho: "32px" | fonte: "Courier New" | x: "50px" | y: "20px"
+Parâmetros suportados:
+
+Texto livre após a primeira tag <t>.
+
+cor: Código de cor hexadecimal ou nome (ex: "#ff5722").
+
+tamanho: Tamanho da fonte em pixels (ex: "32px").
+
+fonte: Nome da família da fonte (ex: "Courier New", "Arial", "Georgia").
+
+x: Coordenada horizontal absoluta (ex: "50px" ou "10%").
+
+y: Coordenada vertical absoluta (ex: "20px").
+
+2. Parágrafos (<p>)
+Estrutura textos e blocos descritivos posicionando-os onde quiseres com total liberdade visual.
+
+Sintaxe padrão:
+
+Code snippet
+<p> Este é o parágrafo estilizado do sistema. <p> cor: "#333333" | tamanho: "16px" | fonte: "Arial" | x: "50px" | y: "80px"
+Parâmetros suportados: Mesmos parâmetros de estilização e coordenadas do título (cor, tamanho, fonte, x, y).
+
+3. Botões Interativos (<b>)
+Os botões agora combinam design customizado, fontes, coordenadas precisas e ações diretas como exibir um alert ou mudar de página (page2).
+
+Exemplo 1: Botão com Ação de Alerta
+
+Code snippet
+<b> Clica Aqui <b> cor: "#4caf50" | fonte: "Arial" | x: "50px" | y: "140px" | alert "Ação executada com sucesso!"
+Exemplo 2: Botão com Navegação de Página (page2)
+
+Code snippet
+<b> Ir para a Página 2 <b> cor: "#007acc" | fonte: "Georgia" | x: "50px" | y: "200px" | page2
+🛠️ Exemplo Completo de Código (v3.0.0)
+Junta tudo num único script para criar uma interface rica e posicionada:
+
+Code snippet
+// Configuração da Página Inicial
+<t> Painel de Controle <t> cor: "#2c3e50" | tamanho: "28px" | fonte: "Arial" | x: "40px" | y: "20px"
+
+<p> Bem-vindo ao ecossistema moderno do RydenScript v3.0.0. <p> cor: "#555555" | tamanho: "15px" | fonte: "Courier New" | x: "40px" | y: "70px"
+
+<b> Entrar no Sistema <b> cor: "#27ae60" | fonte: "Arial" | x: "40px" | y: "130px" | alert "Bem-vindo ao painel!"
+
+<b> Ir para Página 2 <b> cor: "#2980b9" | fonte: "Arial" | x: "40px" | y: "180px" | page2
+📌 Licença & Contribuição
+O RydenScript continua a evoluir graças ao teu feedback como desenvolvedor chefe (RDS). Divirta-te a criar aplicações incríveis! 🚀🔥
