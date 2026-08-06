@@ -358,3 +358,21 @@ Code snippet
 <b> Ir para Página 2 <b> cor: "#2980b9" | fonte: "Arial" | x: "40px" | y: "180px" | page2
 📌 Licença & Contribuição
 O RydenScript continua a evoluir graças ao teu feedback como desenvolvedor chefe (RDS). Divirta-te a criar aplicações incríveis! 🚀🔥
+
+README atualizada e completa com todas as novidades e melhorias da versão v4.0.0:VersãoRecurso / ComandoDescriçãov4.0.0bloco2D Multiuso & EstilizadoCentraliza a criação visual permitindo usar cores, links de imagens ou Base64 para criar botões e elementos customizados do zero.v4.0.0Interação por Clique (Sem Colisão)Adiciona comandos de clique que funcionam independentemente da física do player, ideal para interfaces e menus.v4.0.0clique_paginaNovo tipo de ação que permite navegar instantaneamente entre páginas (da página 1 até o infinito) ao clicar no bloco.v4.0.0clique_mostrarFuncionalidade para revelar ou spawnar outros blocos 2D ou elementos na tela dinamicamente após o clique.v4.0.0Física e Mecânicas de JogoSuporte completo a player, gravidade, colisões, blocos de teleporte, eliminação, super pulo e movimentação.
+
+
+
+# RydenScript v4.0.0 • Release Notes & Features
+
+O **RydenScript v4.0.0** consolida o motor `bloco2D` como um componente coringa definitivo, permitindo criar interfaces completas, jogos e aplicações self-hosted diretamente na sintaxe da linguagem.
+
+## Visão Geral das Novidades
+
+| Recurso / Comando | Descrição da Funcionalidade |
+| :--- | :--- |
+| **`bloco2D` Estilizado e Multiuso** | Centraliza a criação visual permitindo injetar cores, links de imagens ou códigos Base64 diretamente para criar elementos customizados do zero. |
+| **Interatividade por Clique (Sem Colisão)** | Permite que blocos 2D funcionem como botões interativos independentes da física do player, ideais para UIs e menus. |
+| **`clique_pagina`** | Novo gatilho de navegação instantânea entre páginas (da página 1 até o infinito) ativado diretamente ao clicar no bloco. |
+| **`clique_mostrar`** | Funcionalidade avançada para revelar, exibir ou spawnar blocos 2D e elementos ocultos na tela de forma dinâmica. |
+| **Ecossistema Self-Hosted** | Estabilidade aprimorada do motor de física e interpretador de scripts, permitindo construir interfaces completas utilizando a própria sintaxe do RydenScript. |
