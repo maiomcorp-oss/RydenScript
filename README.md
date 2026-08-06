@@ -1,4 +1,4 @@
-# 🛡️ RydenScript Engine 👾
+# RydenScript Linguagem de programação
 
 **RydenScript** Autor: Daniel Saldanha , RydenScript é uma linguagem rapida e facil e cujo todos os comandos são tags , o nome  RydenScript dando assim o o nome de arquivos.rs o RydenScript foi feito em 2026 de mes de julho o Logotipo foi inspirado no Render uma marca de hospedagem de servidor so mudou o nome para "Ryden" e botou o "Script" do lado dando assim "RydenScript" direto ao ponto o RydenScript tem motor de jogos simplificado concebido para transformar a complexidade do desenvolvimento web, de utilitários e de jogos (2D e 3D) numa autêntica brincadeira de crianças!
 
