@@ -20,7 +20,7 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 | :--- | :--- | :--- |
 | `<page1>` | Cria e alterna entre páginas no app | `<page1>` |
 | `<fundo>` | Define a cor de fundo da página | `<fundo> #16161a` |
-| `<t>` | Cria um título customizado (cor, fonte, borda) | `<t> Título <t> cor: #00ffd5 | fonte: Arial | borda: 2px solid #00ffd5` |
+| `<t>` | Cria um título customizado (cor, fonte, borda) | `< t > Título < t > cor: #00ffd5 | fonte: Arial | borda: 2px solid #00ffd5` |
 | `<p>` | Cria um parágrafo customizado | `<p> Texto <p> cor: #fff | fonte: Roboto | borda: none` |
 | `<b>` | Cria um botão customizado com ações e navegação | `<b> Entrar <b> cor: #1a73e8 | fonte: sans-serif | page2` |
 | `<P2P id>` | Exibe o ID P2P exclusivo do usuário | `<P2P id>` |
@@ -28,6 +28,13 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 | `<P2P input>` | mostra um texto de enviar mensagems e adicionar id | `<P2P input> "dados.txt" | conteudo: "Olá" | id "XYZ"` |
 | `<video>` | roda um video | `exemplo : '<video> url "link de video" <video>'|
 | `<image>` | mostra uma imagem | `exemplo: '<image> url "link_de_imagem" <image> |
+
+# exemplo basico
+<textbox> <page1> <fundo> red 
+<t> meu titulo <t> cor: #123 | fonte: arial
+<b> meu botão verde <b> cor: green
+<textbox>
+
 
 ## ⚙️ Core de Funções Integradas (`<f>`)
 
