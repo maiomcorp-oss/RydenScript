@@ -30,9 +30,9 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 | `<image>` | mostra uma imagem | `exemplo: '<image> url "link_de_imagem" <image> |
 
 # exemplo basico
-<textbox> <page1> <fundo> red 
-<t> meu titulo <t> cor: #123 | fonte: arial
-<b> meu botão verde <b> cor: green
+<textbox> < page1 > < fundo > red 
+< t > meu titulo < t > cor: #123 | fonte: arial
+< b > meu botão verde < b > cor: green
 <textbox>
 
 
