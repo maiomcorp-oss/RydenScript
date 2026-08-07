@@ -1,386 +1,224 @@
-# RydenScript Linguagem de programação
+# 🎮 RydenScript
 
-**RydenScript** Autor: Daniel Saldanha , RydenScript é uma linguagem rapida e facil e cujo todos os comandos são tags , o nome  RydenScript dando assim o o nome de arquivos.rs o RydenScript foi feito em 2026 de mes de julho o Logotipo foi inspirado no Render uma marca de hospedagem de servidor so mudou o nome para "Ryden" e botou o "Script" do lado dando assim "RydenScript" direto ao ponto o RydenScript tem motor de jogos simplificado concebido para transformar a complexidade do desenvolvimento web, de utilitários e de jogos (2D e 3D) numa autêntica brincadeira de crianças!, RydenScript foi feito em Javascript , a desgrama do Github fica escondendo minhas tags ai não da pra entender e eu tenho que ficar dando espaço pra não subir no texto tipo assim : < t > , me desculpe, RydenScript e uma linguagem de programação geral, nada de marcação
-
-<p> tutorial: sempre que você começar adicione "< page1 >" e no final adicione mais um < page1 > você mostra que o compilador entende que você fez a sua primeira pagina agora se você colocar < < t > que significa texto e no final colocar mais um < t > exemplo : < t > meu texto < t >, você fez um texto e paragrafo e < p > , e sempre adicione isso dentro da tag < page1 > , tambem da de fazer um botão usando < b > , e mudando a cor de fundo adicione : < fundo > "a cor em css ou nome de cor em ingles" ou seja exemplo com vermelho : < fundo > red, esse e o basico em RydenScript, se quiser aprender mais leia o readme <p>
----
-
-## 🚀 Visão Geral e Diferenciais
-
-Ao contrário de interpretadores rígidos e focados apenas em texto administrativo, o **RydenScript** destaca-se por três pilares fundamentais:
-* **Leveza extrema:** todas as versão da v1.0.0 o RydenScript não saiu dos kilobyts ele roda ate no PC da ruxa
-* **Facilidade e legibilidade:** o RydenScript tem comandos muito diretos e faceis de entender sem ter que colocar ( { ou [ , mais em troca sempre e utilizado o <> .
-* **Zero Configuração:** Esquece setups complexos de câmara, renderizadores, loops de física ou buffers de colisão. O motor do RydenScript trata de tudo nos bastidores de forma invisível, o RydenScript roda o meu i3 core NootBook LG.
+**RydenScript** é uma linguagem de programação rápida, intuitiva e totalmente baseada em tags, desenvolvida para simplificar a criação de aplicações web, utilitários e jogos (2D e 3D). Criada por **Daniel Saldanha** em julho de 2026, a linguagem foi concebida para transformar a complexidade do desenvolvimento em uma experiência acessível e divertida.
 
 ---
 
-## 🧩 Sintaxe Básica (Tags Principais) versão v3.0.0 e v4.0.0
+## 🚀 Visão Geral
 
-| Comando | Função | Exemplo |
+Ao contrário de interpretadores rígidos, o **RydenScript** foca na agilidade e na experiência do desenvolvedor ("Developer Experience"). Seus principais pilares são:
+
+*   **Leveza Extrema:** O interpretador ocupa apenas alguns kilobytes, garantindo performance mesmo em hardwares limitados.
+*   **Sintaxe Amigável:** Utiliza tags (`< >`) em vez de estruturas complexas como chaves `{ }` ou parênteses `( )`.
+*   **Zero Configuração:** Esqueça setups complexos de câmera, renderizadores ou loops de física. O motor do RydenScript gerencia tudo automaticamente.
+*   **Multifuncional:** Capaz de criar desde interfaces administrativas simples até jogos 3D complexos com física e colisão.
+
+---
+
+## 🧩 Sintaxe Básica
+
+A estrutura fundamental do RydenScript é baseada em **Páginas**. Cada aplicação começa com uma definição de página.
+
+### Comandos Essenciais
+
+| Tag | Descrição | Exemplo |
 | :--- | :--- | :--- |
-| `<page1>` | Cria e alterna entre páginas no app | `<page1>` |
-| `<fundo>` | Define a cor de fundo da página | `<fundo> #16161a` |
-| `<t>` | Cria um título customizado (cor, fonte, borda) | `< t > Título < t > cor: #00ffd5 | fonte: Arial | borda: 2px solid #00ffd5` |
-| `<p>` | Cria um parágrafo customizado | `<p> Texto <p> cor: #fff | fonte: Roboto | borda: none` |
-| `<b>` | Cria um botão customizado com ações e navegação | `<b> Entrar <b> cor: #1a73e8 | fonte: sans-serif | page2` |
-| `<P2P id>` | Exibe o ID P2P exclusivo do usuário | `<P2P id>` |
-| `<P2P chat>` | Cria um histórico de chat P2P em tempo real | `<P2P chat>` |
-| `<P2P input>` | mostra um texto de enviar mensagems e adicionar id | `<P2P input> "dados.txt" | conteudo: "Olá" | id "XYZ"` |
-| `<video>` | roda um video | `exemplo : '<video> url "link de video" <video>'|
-| `<image>` | mostra uma imagem | `exemplo: '<image> url "link_de_imagem" <image> |
+| `<pageN>` | Define o início e o fim de uma página (ex: `<page1>`). | `<page1> ... <page1>` |
+| `<fundo>` | Define a cor de fundo da página (CSS ou nome em inglês). | `<fundo> #16161a` |
+| `<t>` | Cria um título estilizado. | `<t> Meu Projeto <t>` |
+| `<p>` | Cria um parágrafo de texto. | `<p> Bem-vindo ao sistema. <p>` |
+| `<b>` | Cria um botão interativo. | `<b> Clique Aqui <b>` |
 
-# exemplo basico
-<textbox> < page1 > < fundo > red 
-< t > meu titulo < t > cor: #123 | fonte: arial
-< b > meu botão verde < b > cor: green
-<textbox>
+> **Dica de Formatação:** Para evitar que o GitHub oculte suas tags, sempre utilize blocos de código ou garanta espaços entre os sinais de menor/maior quando documentar.
 
+---
 
-## ⚙️ Core de Funções Integradas (`<f>`)
+## 🎨 Estilização e Posicionamento (v3.0+)
 
-O interpretador suporta 40 funções utilitárias que estendem o HTML padrão em ferramentas complexas de sistema: 
+A partir da versão 3.0, o RydenScript introduziu controle total sobre o design dos elementos através de parâmetros separados por pipe (`|`).
 
-Desvio de meteoros
-'<f> mapa cor "blue" <f>
-'<f> jogador cor "yellow" '<f>
-'<f> obstaculos cor "red" '<f>
-'<f> jogo2D '<f>
+### Parâmetros Suportados:
+*   `cor`: Hexadecimal ou nome da cor.
+*   `tamanho`: Tamanho da fonte (ex: `24px`).
+*   `fonte`: Família da fonte (ex: `Arial`, `Courier New`).
+*   `x` / `y`: Coordenadas para posicionamento absoluto.
 
-jogo estilo dinossauro quando acaba a internet ou mario 
-'<f> marioCenario "[https://link.com/fundo.png](https://link.com/fundo.png)" '<f>
-'<f> marioJogador "[https://link.com/jogador.png](https://link.com/jogador.png)" '<f>
-'<f> marioInimigo "[https://link.com/inimigo.png](https://link.com/inimigo.png)" '<f>
-'<f> marioChao "[https://link.com/chao.png](https://link.com/chao.png)" '<f>
-'<f> mario <f>
+**Exemplo:**
+```rydenscript
+<t> Título Customizado <t> cor: "#ff5722" | tamanho: "32px" | x: "50px" | y: "20px"
+```
 
-Tetris
-'<f> tetrisFundo cor "black" <f>
-'<f> tetrisBloco "[https://link.com/bloco.png](https://link.com/bloco.png)" '<f>
-'<f> tetris <f>
+---
 
-Codificação pra jogo 3D
-bloco3D [X] [Y] [Z] [Largura] [Altura] [Profundidade] "Cor_ou_Link_Textura" [Comportamento] ["Mensagem_Opcional"]
+## 🕹️ Motor de Jogos (2D e 3D)
 
-Jogo de parkur exemplo 3D
+O RydenScript possui um motor integrado potente para criação de jogos de forma declarativa.
+
+### Blocos 2D (`bloco2D`)
+O comando `bloco2D` aceita: `largura`, `altura`, `posição X`, `posição Y`, `visual` e `comportamento`.
+
+| Comportamento | Descrição |
+| :--- | :--- |
+| `normal` | Bloco sólido com colisão. |
+| `player` | Personagem controlável com física e gravidade. |
+| `pagina` | Portal que transporta o jogador para outra página. |
+| `elimina` | Obstáculo que reseta a posição do jogador. |
+
+### Exemplo de Jogo 3D
+```rydenscript
 <fundo> #16161a
-'<t> 🛠️ Meu Jogo de Parkour 3D 🛠️ '<t> #00e1ff
+<f> jogador3D "https://link-da-skin.png" <f>
+<f> mapa3D "#55aa55" <f>
 
-# Configuração da skin do Jogador (Suporta upload de arquivo local também!)
-'<f> jogador3D "[https://img.icons8.com/emoji/96/dog-emoji.png](https://img.icons8.com/emoji/96/dog-emoji.png)" <f>
-
-# Textura padrão do chão
-'<f> mapa3D "#55aa55" <f>
-
-# Construção das plataformas do mapa
+// bloco3D [X] [Y] [Z] [L] [A] [P] [Textura] [Comportamento]
 bloco3D 0 0 0 5 1 5 "#55aa55" normal
-bloco3D 0 1.5 -7 3 1 3 "[https://img.icons8.com/color/48/minecraft-grass-block.png](https://img.icons8.com/color/48/minecraft-grass-block.png)" normal
-bloco3D 0 -2 -14 8 1 8 "#ff3300" elimina "🔥 A lava derreteu-te! Voltaste ao início!"
-bloco3D 4 3 -21 3 1 3 "#00ffd5" notifica "📢 Checkpoint Secreto Ativado!"
-bloco3D 0 5 -28 4 1 4 "#ffd700" notifica "🏆 PARABÉNS! Completaste o Parkour!"
-
-# Inicialização da Engine 3D
-'<f> jogo3D '<f>
-
-* **Visualização em Grelha (Grid):** ```text
-  <f> grid 3 3 <f>
-📄 Sistema de Páginas e Navegação (<page>)O RydenScript permite criar aplicações multipáginas e redes de telas de forma declarativa e instantânea, sem a necessidade de escrever scripts adicionais para roteamento ou controle de exibição.📌 Como Funciona:Use a tag <pageN> para definir o início de uma nova tela (onde N é o número da página, ex: <page1>, <page2>, etc.).A <page1> é sempre carregada por padrão como a tela principal.Para navegar entre as páginas, basta indicar o destino no botão usando a instrução <f> pageN.🛠️ Sintaxe dos ComandosTag / InstruçãoDescriçãoExemplo<page1>, <page2>, ...Delimita um novo bloco de página/tela.<page1><b> Texto <b> <f> pageNCria um botão interativo que esconde a tela atual e exibe a página N.<b> Ir para o Feed <b> <f> page2💻 Exemplo Prático (Rede Social / App Multi-telas)Plaintext<page1>
-<fundo> #18191a
-<t> 👤 Login / Entrada <t> #e4e6eb
-<p> Bem-vindo à rede em RydenScript! <p> #b0b3b8
-<b> Entrar no Feed <b> <f> page2 cor #2374e1
-<b> Ver Perfil <b> <f> page3 cor #3a3b3c
-
-<page2>
-<fundo> #18191a
-<t> 📰 Feed Principal <t> #e4e6eb
-<p> O que você está pensando hoje? <p> #b0b3b8
-<b> Ir para Notificações <b> <f> page4 cor #3a3b3c
-<b> Voltar para Entrada <b> <f> page1 cor #e41e3f
-
-<page3>
-<fundo> #18191a
-<t> ⚙️ Seu Perfil <t> #e4e6eb
-<p> Nome do Usuário: DevRyden <p> #b0b3b8
-<b> Voltar ao Feed <b> <f> page2 cor #2374e1
-
-<page4>
-<fundo> #18191a
-<t> 🔔 Notificações <t> #e4e6eb
-<p> Você não possui novas notificações no momento. <p> #b0b3b8
-<b> Voltar ao Feed <b> <f> page2 cor #2374e1
-✨ Destaques do Recurso:Páginas Infinitas: Crie quantas telas precisar (<page1> até <page999>).Navegação Limpa: A transição é instantânea e oculta automaticamente os elementos das outras telas.Suporte a Componentes: Cada página pode conter gráficos 3D (<f> jogo3D <f>), botões, vídeos, imagens ou qualquer outro comando da linguagem!
-
-## 🧩 Sintaxe Básica mais explicadamente (Tags explicadas)
-vamos la eu primeiro vou falar as regras não precisa de parenteses colchetes ou qualquer outra coisa so <> e sempre coloque as tags em linhas proprias so a tag <f>, que não precisa se ela ter que ser a configuração de alguma coisa mais eu sempre recomendo quando começar o codigo sempre coloca a tag <page1> porque ela vai ser a sua primeira pagina em seguida a tag <fundo> ela define a cor de fundo da sua pagina por exemplo "<fundo> blue" vc esta definindo que ela sera azul o fundo azul mais pode ser qualquer cor em ingles, e a tag "<t>" e basicamente o seu titulo e vc tambem pode mudar a cor dele por exemplo "<t> meu titulo <t> red" ou seja seu titulo e vermelho agora a tag <b> ela e simplesmente um botão e vc pode usar ela pra dar um alerta na tela ou passar pra sua pagina 2 ou seja pra <page2> mais vou mostrar como da um alert na tela e tambem a de mudar a cor do botão por exemplo um pouco complexo porque vc precisa usar a tag <f> mais pra explicar rapidamente oque a tag <f> faz, ela vem de função ela e a função de alguma coisa e assim como <b> e botão <fundo> e obviamente o fundo da pagina mais com a tag <f> vc pode escolher oque vai acontecer quando clicar em um botão ou em outros comandos aqui vai o exemplo de um botão verde que apos ser apertado lança um alerta na tela "<b> botão <b> <f> alert "ei vc clicou no botão" <f>", basicamente eu acabei de programar um botão chamado botão que quando clica nele lança uma mensagem alerta na tela dizendo vc clicou no botão , e passar pra pagina 2 tambem e facil aqui vai o exemplo "<b> passar pra pagina 2 <b> <f> page2 <f>", e apos clicado passa pra pagina dois, mais aqui vai oque e a pagina dois e que agora quando eu disse no inicio sempre tem que começar com pagina um a "<page1>" e o botão que ia pra pagina 2 ta la agora e so fechar a tag digitando mais um "<page1>" vc fechou essa base agora vc vai escolher oque tem na pagina 2 e vc pode definir ela do jeito que quiser que nem na pagina 1 e sim vc pode fazer paginas infinitas , aqui eu expliquei o basico de RydenScript obrigado por ler ate aqui.
-## Novos comandos (Tags mais novas)
-Calculdora adicionada : <f> calculadora <f>
-pagiamento adicionado exemplo: <page1>
-'<t> pesquise "970" para descobrir '<t> gray
-'<fundo> black
-'<f> pagiamento 1234 painelSecreto | 970 page2 |
-'<page1>
-'<page2>
-'<t> ola vc descobriu essa pagina '<t> gray
-'<page2>
-
-interface adicionada exemplo : '<page1>
-'<fundo> #0f172a
-
-'<f> interface retangulo | cor:#1e293b | largura:100% | altura:60px <f>
-'<t> RydenScript <t> white
-
-'<p> Bem-vindo à página principal estruturada com componentes visuais! <p> #94a3b8
-
-'<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
-'<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
-'<f> interface retangulo | cor:#334155 | largura:300px | altura:180px <f>
-
-
-# Criação complexa e maioria das tags explicadas
-# Vamos gerar um arquivo README.md real e estruturado para o projeto RydenScript
-readme_content = """# 🎮 RydenScript
-
-Uma engine de jogos autoral e interpretador leve baseado em texto, desenhado para criar páginas interativas, menus e jogos 2D estilo plataforma de forma totalmente simples e intuitiva.
+<f> jogo3D <f>
+```
 
 ---
 
-## 🚀 Como Funciona a Sintaxe
+## 🌐 Comunicação P2P
 
-O RydenScript utiliza gatilhos simples com o prefixo `<f>` para executar comandos visuais, criar textos, botões de navegação e instanciar o motor de blocos 2D.
+Crie aplicações descentralizadas e chats em tempo real com facilidade.
 
-### Guia Rápido de Comandos
-
-| Comando / Tag | Descrição | Exemplo de Uso |
-| :--- | :--- | :--- |
-| **`<pageX>`** | Define o início de uma nova página/cenário independente. | `<page1>` |
-| **`<fundo>`** | Define a cor de fundo exclusiva da página atual (ex: `#111111`). | `<fundo> #111111` |
-| **`<t>`** | Cria um título estilizado com cor personalizada. | `<t> #fff Meu Jogo` |
-| **`<p>`** | Cria um parágrafo de texto com cor personalizada. | `<p> #ccc Bem-vindo ao jogo!` |
-| **`<b>`** | Cria um botão interativo de navegação ou ação. | `<b> Ir para a Fase 2 <f> page2` |
+*   `<P2P id>`: Exibe o ID exclusivo do usuário.
+*   `<P2P input>`: Painel para inserir ID de destino e enviar mensagens.
+*   `<P2P chat>`: Renderiza o histórico de mensagens em tempo real.
 
 ---
 
-## 📦 Biblioteca: `bloco2D`
+## ⚙️ Automação (Administract Coder)
 
-O comando `bloco2D` é o coração da criação de mapas, plataformas e interações no RydenScript. Ele aceita parâmetros de largura, altura, posição X/Y, visual (cor hexadecimal ou link direto de imagem) e o tipo de comportamento.
+Para tarefas de sistema e automação, utilize o prefixo `<f> administract>c>`.
 
-> **⚠️ Nota importante sobre formatação no GitHub:** No Markdown padrão, algumas tags angulares como `<page>` ou `<f>` podem ser ocultadas pelo renderizador se colarem com texto puro. Por isso, utilize sempre blocos de código (` ```
-```text?code_stdout&code_event_index=2
-README.md gerado com sucesso!
-
-```text `) ou mantenha espaçamentos claros para garantir que a documentação exiba os caracteres perfeitamente!
-
-### Tabela de Tipos de Blocos 2D
-
-| Tipo (`tipo`) | Descrição e Comportamento | Parâmetro Extra (`extra`) | Exemplo de Código |
-| :--- | :--- | :--- | :--- |
-| **`normal`** | Cria um bloco sólido de colisão (chão, paredes ou plataformas). Suporta cor em HEX ou link de imagem. | *Nenhum* | `<f> bloco2D 600 20 0 350 #444444 normal` |
-| **`player`** | Cria o personagem principal controlável com física de gravidade, pulo (Espaço/W) e movimentação (A/D). | *Nenhum* | `<f> bloco2D 40 40 50 300 #00ffcc player` |
-| **`pagina`** | Funciona como um portal. Se o player colidir com ele, muda instantaneamente para outra página do projeto. | ID de destino (ex: `page2`) | `<f> bloco2D 50 50 200 300 https://site.com/img.png pagina page2` |
-| **`superpulo`** | Bloco especial que aumenta temporariamente a força do pulo do player ao ser tocado. | *Nenhum* | `<f> bloco2D 50 20 400 250 #ffff00 superpulo` |
-| **`elimina`** | Obstáculo ou armadilha perigosa que reseta a posição do player ao encostar. | *Nenhum* | `<f> bloco2D 50 20 150 280 #ff3300 elimina` |
+*   **Gerar Arquivos:** `<f> administract>c> gerar main.js | destino area_trabalho | conteudo "..." `
+*   **Alertas de Sistema:** `<f> administract>c> mensagem "Sistema Iniciado" `
+*   **Executar Programas:** `<f> administract>c> abrir notepad.exe | espera 3`
 
 ---
 
-## 📝 Exemplo Completo de Jogo no RydenScript
-
-Cole o código abaixo no seu interpretador ou arquivo `.rds` para testar um cenário completo com menu, física e transição de páginas:
-
-```text
-<page1>
-<fundo> #0f172a
-<t> #38bdf8 Menu Principal - RydenScript
-<p> #94a3b8 Escolha uma opção para começar:
-<b> Iniciar Aventura <f> page2
-
-<page2>
-<fundo> #111111
-<t> #fff Fase 1: O Labirinto
-<p> #ccc Use A e D para andar e W/Espaço para pular.
-
-<f> bloco2D 600 20 0 350 #444444 normal
-<f> bloco2D 50 50 200 300 https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg pagina page1
-<f> bloco2D 40 40 50 300 #00ffcc player
-
-# ⚙️ Administract Coder — Documentação Oficial & Comandos de Automação
-
-O **Administract Coder** é a linguagem de automação, painéis e controle administrativo do ecossistema Maiom Corp. Integrada diretamente ao motor do RydenScript, ela capacita o desenvolvedor a estruturar sistemas de acesso, fluxos de dados, criação de arquivos, painéis de gerenciamento e ferramentas utilitárias avançadas.
-
----
-
-## 📋 Tabela de Comandos de Administração e Automação
-
-| Comando / Sintaxe | Descrição / Função no Sistema | Exemplo de Uso |
-| :--- | :--- | :--- |
-| `<fundo> [cor]` | Define a cor de fundo padrão da página ou painel atual. | `<fundo> #f4f6f9` |
-| `<t> [texto] <t> [cor]` | Cria um título formatado com a cor personalizada. | `<t> Central <t> #333` |
-| `<p> [texto] <p> [cor]` | Cria um parágrafo de texto descritivo. | `<p> Descrição <p> #666` |
-| `<f> administract>c> gerar [arquivo] \| destino [local] \| conteudo "[texto]"` | Automatiza a criação e geração instantânea de arquivos físicos de diferentes estruturas. | `<f> administract>c> gerar main.js \| destino area_trabalho \| conteudo "console.log('Online!');"` |
-| `<f> administract>c> mensagem "[texto]"` | Dispara mensagens e alertas automatizados do sistema do Administract Coder. | `<f> administract>c> mensagem "Sistema iniciado!"` |
-| `<f> administract>c> abrir [aplicativo/url] \| espera [segundos]` | Automatiza a abertura de programas executáveis ou páginas web com tempo de espera programado. | `<f> administract>c> abrir notepad.exe \| espera 3` |
-| `<f> pagiamento [senha] [pagina]` | Cria códigos de acesso rápidos para redirecionar o fluxo e proteger áreas do sistema. | `<f> pagiamento 1234 painelSecreto` |
-| `<f> salvarLocal "[chave]"` | Gerencia o armazenamento local (`localStorage`) salvando e carregando dados direto na interface. | `<f> salvarLocal "usuarioConfig"` |
-| `<f> cronometro` | Aciona um cronômetro completo de precisão com controles de iniciar, pausar e resetar. | `<f> cronometro` |
-
----
-
-## 🚀 Exemplo Completo de Script com o Administract Coder
-
-```html
-<fundo> #f4f6f9
-<page1>
-<t> Central de Automação Avançada - Maiom Corp <t> #333
-<p> Crie diferentes estruturas de arquivos instantaneamente: <p> #666
-
-<f> administract>c> gerar main.js | destino area_trabalho | conteudo "console.log('Sistema Maiom Corp Online!');"
-<f> administract>c> gerar notas.txt | destino documentos | conteudo "Lista de tarefas pendentes do projeto."
-<f> administract>c> gerar config.json | destino pasta_atual | conteudo "{\n  \"versao\": \"2.0\",\n  \"status\": \"ativo\"\n}"
-
-<f> administract>c> mensagem "Olá Daniel! Sistema da Maiom Corp iniciado com sucesso."
-<f> administract>c> abrir notepad.exe | espera 3
-<f> administract>c> abrir [https://www.google.com](https://www.google.com) | espera 5
-
-# 🌐 RydenScript - Documentação de Recursos (v2.0)
-
-Bem-vindo à documentação oficial dos recursos do **RydenScript**. Abaixo estão detalhadas as especificações, sintaxes e descrições da nova tag de rede **P2P** e da função de navegação do **menu**.
-
-## 📋 sistema de comunicação P2P e menu lateral
-
-| Recurso / Componente | Sintaxe no Código | Descrição / Comportamento |
-| :--- | :--- | :--- |
-| **P2P (ID do Nó)** | `<P2P id>` | Gera e exibe na tela o ID aleatório exclusivo do usuário na rede descentralizada. |
-| **P2P (Painel de Envio)** | `<P2P input>` | Insere o painel interativo de comando para digitar o ID do destino, mensagem e enviar. |
-| **P2P (Histórico/Chat)** | `<P2P chat>` | Renderiza a janela de histórico onde as mensagens trocadas via WebRTC aparecem em tempo real. |
-| **Função Menu** | `<f> menu \| cor: [hex] \| cormenu: [hex] \| paginas: Nome:pageID,...` | Cria dinamicamente a barra de navegação superior customizada, permitindo alternar entre as páginas do script. |
-
----
-
-### 💡 Exemplo de Uso Prático (RydenScript com Menu e P2P)
-
-```text
-<page1>
-<f> menu | cor: #ff5722 | cormenu: #222 | paginas: Home:page1, Creditos:page2, Videos:page3
-<t> Olá mundo! <t>
-<p> Compartilhe seu ID P2P: <p>
-<P2P id>
-<P2P input>
-<P2P chat>
-
-# 🚀 RydenScript v3.0.0
-
-Bem-vindo à documentação oficial da versão **v3.0.0** do **RydenScript**! Esta versão traz um salto evolutivo na estilização e no posicionamento de elementos, permitindo que criues interfaces completas de forma limpa, direta e com controle absoluto de design.
-
----
-
-## 🎨 O que há de novo na v3.0.0?
-
-Na v3.0.0, os componentes principais ganharam suporte total a **estilização personalizada**, **família de fontes**, **cores customizadas** e **posicionamento absoluto por coordenadas (X e Y)**.
-
----
-
----
-
-## 🎨 O que há de novo na v3.0.0?
-
-- Suporte total a **estilização personalizada**
-- Definição de **família de fontes**
-- **Cores customizadas**
-- **Posicionamento absoluto** por coordenadas (X e Y)
-
----
-
-## 📖 Guia de Sintaxe e Comandos
-
-| **Elemento** | **Sintaxe** | **Parâmetros Suportados** | **Exemplo** |
-|--------------|-------------|---------------------------|-------------|
-| **Título (`<t>`)** | `<t> Texto <t> cor | tamanho | fonte | x | y` | • cor<br>• tamanho<br>• fonte<br>• x<br>• y | `<t> O Meu Título <t> cor:"#ff5722" | tamanho:"32px" | fonte:"Courier New" | x:"50px" | y:"20px"` |
-| **Parágrafo (`<p>`)** | `<p> Texto <p> cor | tamanho | fonte | x | y` | • cor<br>• tamanho<br>• fonte<br>• x<br>• y | `<p> Este é o parágrafo <p> cor:"#333" | tamanho:"16px" | fonte:"Arial" | x:"50px" | y:"80px"` |
-| **Botão (`<b>`)** | `<b> Texto <b> cor | fonte | x | y | ação` | • cor<br>• fonte<br>• x<br>• y<br>• alert / page2 | `<b> Clica Aqui <b> cor:"#4caf50" | fonte:"Arial" | x:"50px" | y:"140px" | alert "Sucesso!"` |
-
----
-
-## 🛠️ Exemplo Completo de Código (v3.0.0)
+## 📝 Exemplo Completo (App Multi-páginas)
 
 ```rydenscript
-// Configuração da Página Inicial
-<t> Painel de Controle <t> cor:"#2c3e50" | tamanho:"28px" | fonte:"Arial" | x:"40px" | y:"20px"
+<page1>
+    <fundo> #18191a
+    <t> Painel de Entrada <t> cor: "#ffffff"
+    <p> Escolha uma opção abaixo: <p>
+    <b> Iniciar App <b> <f> page2 <f> cor: "#2374e1"
+<page1>
 
-<p> Bem-vindo ao ecossistema moderno do RydenScript v3.0.0. <p> cor:"#555555" | tamanho:"15px" | fonte:"Courier New" | x:"40px" | y:"70px"
+<page2>
+    <fundo> #0f172a
+    <t> Bem-vindo à Página 2 <t>
+    <b> Voltar <b> <f> page1 <f>
+<page2>
+```
 
-<b> Entrar no Sistema <b> cor:"#27ae60" | fonte:"Arial" | x:"40px" | y:"130px" | alert "Bem-vindo ao painel!"
+## 🛠️ Biblioteca Completa da Tag de Função `<f>`
 
-<b> Ir para Página 2 <b> cor:"#2980b9" | fonte:"Arial" | x:"40px" | y:"180px" | page2
+A tag `<f>` (Função) é o coração do RydenScript, permitindo acessar bibliotecas de jogos, utilitários e sistema. Abaixo estão **todos** os comandos documentados:
 
+### 1. Engine de Jogos 2D (Estilo Mario/Dinossauro)
+Use estes comandos para configurar e iniciar um jogo de plataforma 2D.
+*   `<f> marioCenario "url" <f>`: Define a imagem de fundo.
+*   `<f> marioJogador "url" <f>`: Define a skin do personagem.
+*   `<f> marioInimigo "url" <f>`: Define a imagem do inimigo.
+*   `<f> marioChao "url" <f>`: Define a textura do chão.
+*   `<f> mario <f>`: Inicializa o motor do jogo estilo Mario.
+*   `<f> mapa cor "cor" <f>`: Define a cor do mapa no jogo de desvio.
+*   `<f> jogador cor "cor" <f>`: Define a cor do jogador.
+*   `<f> obstaculos cor "cor" <f>`: Define a cor dos obstáculos.
+*   `<f> jogo2D <f>`: Inicializa o motor de jogo 2D de desvio.
 
-### 1. Títulos (`<t>`)
-Agora podes definir cores, tamanhos, fontes personalizadas e a exata posição na tela do teu título.
+### 2. Engine de Blocos 2D (v4.0.0)
+Comando versátil para criar elementos com física ou interatividade.
+*   **Sintaxe:** `<f> bloco2D [Largura] [Altura] [X] [Y] [Visual] [Comportamento] [Extra]`
+*   **Comportamentos suportados:**
+    *   `normal`: Bloco sólido.
+    *   `player`: Personagem controlável.
+    *   `pagina`: Portal para outra página (Ex: `pagina page2`).
+    *   `superpulo`: Bloco que impulsiona o pulo.
+    *   `elimina`: Reseta o player (Ex: `elimina "Mensagem"`).
+    *   `clique_pagina`: Botão que muda de página ao clicar.
+    *   `clique_mostrar`: Revela elementos ocultos ao clicar.
 
-* **Sintaxe padrão:**
-  ```rydenscript
-  <t> O Meu Título Incrível <t> cor: "#ff5722" | tamanho: "32px" | fonte: "Courier New" | x: "50px" | y: "20px"
-Parâmetros suportados:
+### 3. Engine de Jogos 3D (Parkour e Exploração)
+*   `<f> jogador3D "url_ou_path" <f>`: Define a skin/modelo do jogador 3D.
+*   `<f> mapa3D "cor_ou_hex" <f>`: Define a textura padrão do chão 3D.
+*   `<f> jogo3D <f>`: Inicializa a Engine 3D.
+*   **Comando de Bloco 3D:** `bloco3D [X] [Y] [Z] [L] [A] [P] [Textura] [Comportamento] [Mensagem]`
 
-Texto livre após a primeira tag <t>.
+### 4. Biblioteca Tetris
+*   `<f> tetrisFundo cor "cor" <f>`: Define o fundo do Tetris.
+*   `<f> tetrisBloco "url" <f>`: Define a textura dos blocos.
+*   `<f> tetris <f>`: Inicializa o jogo Tetris.
 
-cor: Código de cor hexadecimal ou nome (ex: "#ff5722").
+### 5. Administract Coder (Sistema e Automação)
+Comandos para gestão de arquivos e tarefas administrativas.
+*   `<f> administract>c> gerar [arq] | destino [local] | conteudo "[texto]"`: Cria arquivos.
+*   `<f> administract>c> mensagem "[texto]"`: Exibe alerta de sistema.
+*   `<f> administract>c> abrir [app/url] | espera [segundos]`: Abre programas/sites.
+*   `<f> pagiamento [senha] [painel] | [código] [página]`: Sistema de acesso e redirecionamento.
 
-tamanho: Tamanho da fonte em pixels (ex: "32px").
+### 6. Utilitários e Interface
+*   `<f> calculadora <f>`: Abre a interface de calculadora.
+*   `<f> cronometro <f>`: Abre um cronômetro com controles.
+*   `<f> alert "mensagem" <f>`: Exibe um alerta na tela (usado em botões).
+*   `<f> pageN <f>`: Comando de navegação para a página N.
+*   `<f> grid [linhas] [colunas] <f>`: Cria uma estrutura de grelha.
+*   `<f> interface retangulo | cor:[c] | largura:[l] | altura:[a] <f>`: Cria um componente visual.
+*   `<f> menu | cor:[c] | cormenu:[c] | paginas:Nome:pageID,... <f>`: Cria barra de navegação.
 
-fonte: Nome da família da fonte (ex: "Courier New", "Arial", "Georgia").
+---
 
-x: Coordenada horizontal absoluta (ex: "50px" ou "10%").
+## 🧩 Outras Tags Importantes
 
-y: Coordenada vertical absoluta (ex: "20px").
+*   `<page1>` ... `<page1>`: Delimitador de páginas.
+*   `<fundo> [cor]`: Define o fundo da página atual.
+*   `<t> [texto] <t> [estilo]`: Título estilizado (cor, fonte, tamanho, x, y).
+*   `<p> [texto] <p> [estilo]`: Parágrafo estilizado (cor, fonte, tamanho, x, y).
+*   `<b> [texto] <b> [estilo]`: Botão estilizado com ações (alert, pageN).
+*   `<P2P id>`, `<P2P input>`, `<P2P chat>`: Sistema de rede descentralizada.
+*   `<video>`, `<image>`: Exibição de mídia.
 
-2. Parágrafos (<p>)
-Estrutura textos e blocos descritivos posicionando-os onde quiseres com total liberdade visual.
+---
 
-Sintaxe padrão:
+## 📝 Exemplo de Código (v4.0.0)
 
-Code snippet
-<p> Este é o parágrafo estilizado do sistema. <p> cor: "#333333" | tamanho: "16px" | fonte: "Arial" | x: "50px" | y: "80px"
-Parâmetros suportados: Mesmos parâmetros de estilização e coordenadas do título (cor, tamanho, fonte, x, y).
+```rydenscript
+<page1>
+    <fundo> #0f172a
+    <f> menu | cor: #ff5722 | cormenu: #222 | paginas: Home:page1, Jogo:page2 <f>
+    <t> Bem-vindo ao RydenScript <t> cor: "white" | x: "50px" | y: "20px"
+    <b> Iniciar Jogo <b> <f> page2 <f> cor: "green" | x: "50px" | y: "100px"
+<page1>
 
-3. Botões Interativos (<b>)
-Os botões agora combinam design customizado, fontes, coordenadas precisas e ações diretas como exibir um alert ou mudar de página (page2).
+<page2>
+    <fundo> #111
+    <f> jogador3D "https://img.icons8.com/emoji/96/dog-emoji.png" <f>
+    <f> mapa3D "#55aa55" <f>
+    bloco3D 0 0 0 5 1 5 "#55aa55" normal
+    <f> jogo3D <f>
+<page2>
+```
 
-Exemplo 1: Botão com Ação de Alerta
+---
 
-Code snippet
-<b> Clica Aqui <b> cor: "#4caf50" | fonte: "Arial" | x: "50px" | y: "140px" | alert "Ação executada com sucesso!"
-Exemplo 2: Botão com Navegação de Página (page2)
+## 📈 Histórico de Versões
 
-Code snippet
-<b> Ir para a Página 2 <b> cor: "#007acc" | fonte: "Georgia" | x: "50px" | y: "200px" | page2
-🛠️ Exemplo Completo de Código (v3.0.0)
-Junta tudo num único script para criar uma interface rica e posicionada:
-
-Code snippet
-// Configuração da Página Inicial
-<t> Painel de Controle <t> cor: "#2c3e50" | tamanho: "28px" | fonte: "Arial" | x: "40px" | y: "20px"
-
-<p> Bem-vindo ao ecossistema moderno do RydenScript v3.0.0. <p> cor: "#555555" | tamanho: "15px" | fonte: "Courier New" | x: "40px" | y: "70px"
-
-<b> Entrar no Sistema <b> cor: "#27ae60" | fonte: "Arial" | x: "40px" | y: "130px" | alert "Bem-vindo ao painel!"
-
-<b> Ir para Página 2 <b> cor: "#2980b9" | fonte: "Arial" | x: "40px" | y: "180px" | page2
-📌 Licença & Contribuição
-O RydenScript continua a evoluir graças ao teu feedback como desenvolvedor chefe (RDS). Divirta-te a criar aplicações incríveis! 🚀🔥
-
-README atualizada e completa com todas as novidades e melhorias da versão v4.0.0:VersãoRecurso / ComandoDescriçãov4.0.0bloco2D Multiuso & EstilizadoCentraliza a criação visual permitindo usar cores, links de imagens ou Base64 para criar botões e elementos customizados do zero.v4.0.0Interação por Clique (Sem Colisão)Adiciona comandos de clique que funcionam independentemente da física do player, ideal para interfaces e menus.v4.0.0clique_paginaNovo tipo de ação que permite navegar instantaneamente entre páginas (da página 1 até o infinito) ao clicar no bloco.v4.0.0clique_mostrarFuncionalidade para revelar ou spawnar outros blocos 2D ou elementos na tela dinamicamente após o clique.v4.0.0Física e Mecânicas de JogoSuporte completo a player, gravidade, colisões, blocos de teleporte, eliminação, super pulo e movimentação.
-
-
-
-# RydenScript v4.0.0 • Release Notes & Features
-
-O **RydenScript v4.0.0** consolida o motor `bloco2D` como um componente coringa definitivo, permitindo criar interfaces completas, jogos e aplicações self-hosted diretamente na sintaxe da linguagem.
-
-## Visão Geral das Novidades
-
-| Recurso / Comando | Descrição da Funcionalidade |
+| Versão | Principais Novidades |
 | :--- | :--- |
-| **`bloco2D` Estilizado e Multiuso** | Centraliza a criação visual permitindo injetar cores, links de imagens ou códigos Base64 diretamente para criar elementos customizados do zero. |
-| **Interatividade por Clique (Sem Colisão)** | Permite que blocos 2D funcionem como botões interativos independentes da física do player, ideais para UIs e menus. |
-| **`clique_pagina`** | Novo gatilho de navegação instantânea entre páginas (da página 1 até o infinito) ativado diretamente ao clicar no bloco. |
-| **`clique_mostrar`** | Funcionalidade avançada para revelar, exibir ou spawnar blocos 2D e elementos ocultos na tela de forma dinâmica. |
-| **Ecossistema Self-Hosted** | Estabilidade aprimorada do motor de física e interpretador de scripts, permitindo construir interfaces completas utilizando a própria sintaxe do RydenScript. |
+| **v1.0.0** | Lançamento inicial, foco em tags básicas e leveza extrema. |
+| **v2.0.0** | Introdução do sistema P2P e menus de navegação dinâmicos. |
+| **v3.0.0** | Suporte a posicionamento absoluto (X/Y) e estilização avançada. |
+| **v4.0.0** | Evolução do motor `bloco2D`, interatividade por clique e ecossistema self-hosted. |
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido com ☕ e dedicação por **Daniel Saldanha**.
+Inspirado na simplicidade e no poder da web moderna.
+
+---
+*RydenScript - Transformando código em brincadeira de criança.*
