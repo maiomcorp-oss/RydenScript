@@ -10,7 +10,7 @@
 Ao contrário de interpretadores rígidos e focados apenas em texto administrativo, o **RydenScript** destaca-se por três pilares fundamentais:
 * **Leveza extrema:** todas as versão da v1.0.0 o RydenScript não saiu dos kilobyts ele roda ate no PC da ruxa
 * **Facilidade e legibilidade:** o RydenScript tem comandos muito diretos e faceis de entender sem ter que colocar ( { ou [ , mais em troca sempre e utilizado o <> .
-* **Zero Configuração:** Esquece setups complexos de câmara, renderizadores, loops de física ou buffers de colisão. O motor do RydenScript trata de tudo nos bastidores de forma invisível, o RydenScript roda o meu i3 core NootBook LG , que e a casa de baratas.
+* **Zero Configuração:** Esquece setups complexos de câmara, renderizadores, loops de física ou buffers de colisão. O motor do RydenScript trata de tudo nos bastidores de forma invisível, o RydenScript roda o meu i3 core NootBook LG.
 
 ---
 
