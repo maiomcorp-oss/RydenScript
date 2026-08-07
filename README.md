@@ -14,7 +14,7 @@ Ao contrário de interpretadores rígidos e focados apenas em texto administrati
 
 ---
 
-## 🧩 Sintaxe Básica (Tags Principais)
+## 🧩 Sintaxe Básica (Tags Principais) versão v3.0.0 e v4.0.0
 
 | Comando | Função | Exemplo |
 | :--- | :--- | :--- |
