@@ -8,9 +8,9 @@
 ## 🚀 Visão Geral e Diferenciais
 
 Ao contrário de interpretadores rígidos e focados apenas em texto administrativo, o **RydenScript** destaca-se por três pilares fundamentais:
-* **Retrocompatibilidade Absoluta:** Atualizações massivas (como a injeção do motor 3D) rodam em perfeita harmonia com os comandos mais antigos, mantendo todas as funcionalidades intactas.
-* **Hibridismo Poderoso:** Consegue renderizar utilitários de sistema dinâmicos, jogos 2D clássicos em Canvas e ambientes virtuais 3D no mesmo ecrã.
-* **Zero Configuração:** Esquece setups complexos de câmara, renderizadores, loops de física ou buffers de colisão. O motor do RydenScript trata de tudo nos bastidores de forma invisível.
+* **Leveza extrema:** todas as versão da v1.0.0 o RydenScript não saiu dos kilobyts ele roda ate no PC da ruxa
+* **Facilidade e legibilidade:** o RydenScript tem comandos muito diretos e faceis de entender sem ter que colocar ( { ou [ , mais em troca sempre e utilizado o <> .
+* **Zero Configuração:** Esquece setups complexos de câmara, renderizadores, loops de física ou buffers de colisão. O motor do RydenScript trata de tudo nos bastidores de forma invisível, o RydenScript roda o meu i3 core NootBook LG , que e a casa de baratas.
 
 ---
 
