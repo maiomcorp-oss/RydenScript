@@ -18,7 +18,7 @@ Todo aplicativo ou site em RydenScript deve ser delimitado por tags de página. 
 *   *Nota:* Você pode criar páginas infinitas (`<page2>`, `<page3>`, etc.) e navegar entre elas instantaneamente.
 
 ### 3. Simplicidade Radical
-Não utiliza chaves `{ }`, parênteses `( )` ou colchetes `[ ]` nem barras '/' nem palavras inteiras dentro por exemplo 'button' o certo e 'b" e o titulo e 't' e a mesma coisa com o paragrafo que e p dentro do '< >' . A separação de parâmetros complexos é feita através do caractere pipe `|`.
+Não utiliza chaves `{ }`, parênteses `( )` ou colchetes `[ ]` nem barras `/` nem palavras inteiras dentro por exemplo `<button>` o certo e `<b>` e o titulo e '<t>' e a mesma coisa com o paragrafo que e `<p>` . A separação de parâmetros complexos é feita através do caractere pipe `|`.
 
 ---
 
