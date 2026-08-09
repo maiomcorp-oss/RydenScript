@@ -1,6 +1,6 @@
 # 🚀 RydenScript: Linguagem de Programação Geral
 
-O **RydenScript** é uma linguagem de programação rápida, fácil e declarativa, onde todos os comandos são baseados em tags. Criada por **Daniel Saldanha** em julho de 2026, ela foi concebida para **revolucionar o desenvolvimento web, a criação de utilitários e aplicativos**, tornando a construção de sistemas complexos tão simples quanto uma brincadeira de criança.
+O **RydenScript** é uma linguagem de programação rápida, fácil e declarativa, onde todos os comandos são baseados em tags (não usa comandos de outras linguagems!!). Criada por **Daniel Saldanha** em julho de 2026, ela foi concebida para **revolucionar o desenvolvimento web, a criação de utilitários e aplicativos**, tornando a construção de sistemas complexos tão simples quanto uma brincadeira de criança.
 
 Diferente de linguagens de marcação puras, o RydenScript é uma linguagem de **propósito geral** com motor de lógica, rede P2P e automação de sistemas integrados.
 
