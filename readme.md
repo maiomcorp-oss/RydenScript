@@ -27,7 +27,7 @@ Não utiliza chaves `{ }`, parênteses `( )` ou colchetes `[ ]`. A separação d
 ### Nível 1: Comandos Básicos de Estrutura
 Estes são os blocos fundamentais para criar uma página web ou sistema simples.
 
-| Tag | Função | Exemplo |
+| Tag | Função | Exemplo de como deve ser escrito|
 | :--- | :--- | :--- |
 | `<fundo>` | Define a cor de fundo da página (CSS ou Inglês). | `<fundo> red` |
 | `<t>` | Cria um título ou cabeçalho. | `<t> Título <t>` |
