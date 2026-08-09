@@ -15,7 +15,7 @@ O RydenScript utiliza `< >` para todos os comandos. Para garantir que o compilad
 Todo aplicativo ou site em RydenScript deve ser delimitado por tags de página. A `<page1>` é a tela principal carregada por padrão.
 *   **Início:** `<page1>`
 *   **Fim:** `<page1>`
-*   *Nota:* Você pode criar páginas infinitas (`<page2>`, `<page3>`, etc.) e navegar entre elas instantaneamente, aviso: não escreva `<pagina1>` ta errado o certo e sempre page `<page1>` e assim com todas as outras de 1 a infinito .
+*   *Nota:* Você pode criar páginas infinitas (`<page2>`, `<page3>`, etc.) e navegar entre elas instantaneamente, aviso: não escreva `<pagina1>` ta errado o certo e sempre page `<page1>` e assim com todas as outras de 1 a infinito , mais tirando a tag `<fundo>` e `<page>` os comandos basicos são apenas uma letra significativa que deve ser escrita do jeito pedido nas tabelas de exemplo , ex: `<t>` `<b>` `<p>`  .
 
 ### 3. Simplicidade Radical
 Não utiliza chaves `{ }`, parênteses `( )` ou colchetes `[ ]` nem barras `/` nem palavras inteiras dentro , por exemplo `<button>` o certo e `<b>` e o titulo e `<t>` e a mesma coisa com o paragrafo que e `<p>` . A separação de parâmetros complexos é feita através do caractere pipe `|`.
