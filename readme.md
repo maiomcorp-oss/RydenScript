@@ -55,6 +55,7 @@ O RydenScript permite criar aplicações multipáginas e interfaces modernas.
 *   **Componentes Visuais:**
     *   `<f> interface retangulo | cor:#1e293b | largura:100% | altura:60px <f>`
     *   `<f> grid [linhas] [colunas] <f>` (Ex: `<f> grid 3 3 <f>`)
+    *   `<f> pagiamento | [palavra chave] [ pagina ] | ... infinito` (Ex: `<f> pagiamento | 123 page2 | `) 
 
 ---
 
@@ -174,7 +175,9 @@ Comandos para gestão de arquivos e tarefas administrativas.
 *   `<f> pageN <f>`: Comando de navegação para a página N.
 *   `<f> grid [linhas] [colunas] <f>`: Cria uma estrutura de grelha.
 *   `<f> interface retangulo | cor:[c] | largura:[l] | altura:[a] <f>`: Cria um componente visual.
-*   `<f> menu | cor:[c] | cormenu:[c] | paginas:Nome:pageID,... <f>`: Cria barra de navegação.
+*   `<f> menu | cor:[c] | cormenu:[c] | paginas:Nome:pageID,... <f>`: Cria um menu de navegação entre paginas.
+*   `<f> irpara "URL" <f>`
+*   `<f> login | titulo: "seutitulo" | corFundo: #123 | corBotao: #145 | textoBotao | corTexto <f> `
 
 ---
 
