@@ -140,15 +140,15 @@ Use estes comandos para configurar e iniciar um jogo de plataforma 2D.
 
 ### 2. Engine de Blocos 2D (v4.0.0)
 Comando versátil para criar elementos com física ou interatividade.
-*   **Sintaxe:** `<f> bloco2D [Largura] [Altura] [X] [Y] [Visual] [Comportamento] [Extra]`
+*   **Sintaxe:** `<f> bloco2D [Largura] [Altura] [X] [Y] [Visual/link de imagem] [Comportamento] [Extra]`
 *   **Comportamentos suportados:**
     *   `normal`: Bloco sólido.
     *   `player`: Personagem controlável.
-    *   `pagina`: Portal para outra página (Ex: `pagina page2`).
+    *   `pagina`: Portal para outra página apos encostar no bloco com esse comportamento (Ex: `pagina page2`).
     *   `superpulo`: Bloco que impulsiona o pulo.
-    *   `elimina`: Reseta o player (Ex: `elimina "Mensagem"`).
-    *   `clique_pagina`: Botão que muda de página ao clicar.
-    *   `clique_mostrar`: Revela elementos ocultos ao clicar.
+    *   `elimina`: Reseta o player pra de onde ele veio (Ex: `elimina "Mensagem"`).
+    *   `clique_pagina`: Botão que muda de página ao clicar no bloco (Ex: `clique_pagina page2`).
+    *   `clique_mostrar`: Revela elementos ocultos ao clicar (quebrado).
 
 ### 3. Engine de Jogos 3D (Parkour e Exploração)
 *   `<f> jogador3D "url_ou_path" <f>`: Define a skin/modelo do jogador 3D.
