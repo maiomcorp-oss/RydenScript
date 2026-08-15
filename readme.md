@@ -120,8 +120,6 @@ Utilizado para criar interfaces interativas ou jogos de plataforma.
 
 ---
 
-```
-
 ## 🛠️ Biblioteca Completa da Tag de Função `<f>`
 
 A tag `<f>` (Função) é o coração do RydenScript, permitindo acessar bibliotecas de jogos, utilitários e sistema. Abaixo estão **todos** os comandos documentados:
