@@ -221,6 +221,11 @@ Comandos para gestão de arquivos e tarefas administrativas.
 | **v3.0.0** | Suporte a posicionamento absoluto (X/Y) e estilização avançada. |
 | **v4.0.0** | Evolução do motor `bloco2D`, interatividade por clique e ecossistema self-hosted. |
 
+dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
+exemplo1: alterne em paginas para diferentes estados, 
+exemplo2: preocure ser mais curioso e testando diferentes bibliotecas
+exemplo3: use a sua criatividade e tente fazer gambiarras para fazer oque você deseja mesmo não tento comando especifico, assim como no Bloco2D.
+
 ---
 
 ## 👨‍💻 Autor
