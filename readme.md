@@ -235,3 +235,5 @@ Inspirado na simplicidade e no poder da web moderna.
 
 ---
 *RydenScript - Transformando código em brincadeira de criança.*
+
+#RydenScript #programinglanguage #programação #tecnologia
