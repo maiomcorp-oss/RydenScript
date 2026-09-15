@@ -220,6 +220,7 @@ Comandos para gestão de arquivos e tarefas administrativas.
 | **v2.0.0** | Introdução do sistema P2P e menus de navegação dinâmicos. |
 | **v3.0.0** | Suporte a posicionamento absoluto (X/Y) e estilização avançada. |
 | **v4.0.0** | Evolução do motor `bloco2D`, interatividade por clique e ecossistema self-hosted. |
+| **v5.0.0** |RydenScript virou um magico , trazendo mais automação com a sua cartola e utilizando PowerShell. |
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
 exemplo1: alterne em paginas para diferentes estados, 
