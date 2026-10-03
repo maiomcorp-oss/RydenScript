@@ -209,23 +209,7 @@ Comandos para gestão de arquivos e tarefas administrativas.
     <f> jogo3D <f>
 <page2>
 ```
-
----
-
-## 📈 Histórico de Versões
-
-| Versão | Principais Novidades |
-| :--- | :--- |
-| **v1.0.0** | Lançamento inicial, foco em tags básicas e leveza extrema. |
-| **v2.0.0** | Introdução do sistema P2P e menus de navegação dinâmicos. |
-| **v3.0.0** | Suporte a posicionamento absoluto (X/Y) e estilização avançada. |
-| **v4.0.0** | Evolução do motor `bloco2D`, interatividade por clique e ecossistema self-hosted. |
-| **v5.0.0** |RydenScript virou um magico , trazendo mais automação com a sua cartola e utilizando PowerShell. |
-| **v6.0.0** |RydenScript Resolveu melhorar seu proprio visual , Trazendo mais Leveza e Otimização. |
-| **v7.0.0** |RydenScript Trouxe mais Bibliotecas ao `<f>` e mais Comandos ao `<RS>`  |
-
 ## RydenScript v5.0.0 Documentação
-
 MUDANÇAS DO RYDENSCRIPT — <RS> E POWERSHELL
 
 1. <RS>
@@ -430,6 +414,20 @@ Frase:
 "Você programa em RydenScript.
 O RydenScript programa o PowerShell."
 
+
+---
+
+## 📈 Histórico de Versões
+
+| Versão | Principais Novidades |
+| :--- | :--- |
+| **v1.0.0** | Lançamento inicial, foco em tags básicas e leveza extrema. |
+| **v2.0.0** | Introdução do sistema P2P e menus de navegação dinâmicos. |
+| **v3.0.0** | Suporte a posicionamento absoluto (X/Y) e estilização avançada. |
+| **v4.0.0** | Evolução do motor `bloco2D`, interatividade por clique e ecossistema self-hosted. |
+| **v5.0.0** |RydenScript virou um magico , trazendo mais automação com a sua cartola e utilizando PowerShell. |
+| **v6.0.0** |RydenScript Resolveu melhorar seu proprio visual , Trazendo mais Leveza e Otimização. |
+| **v7.0.0** |RydenScript Trouxe mais Bibliotecas ao `<f>` e mais Comandos ao `<RS>`  |
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
 exemplo1: alterne em paginas para diferentes estados, 
