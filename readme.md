@@ -210,209 +210,262 @@ Comandos para gestão de arquivos e tarefas administrativas.
 <page2>
 ```
 ## RydenScript v5.0.0 Documentação
-`MUDANÇAS DO RYDENSCRIPT — <RS> E POWERSHELL
+# Mudanças do RydenScript — `<RS>` e PowerShell
 
-1. <RS>
+## 1. `<RS>`
 
-O <RS> é um bloco do RydenScript criado para concentrar a saída de código PowerShell.
+O `<RS>` é um bloco do RydenScript criado para concentrar a saída de código PowerShell.
 
 A lógica continua sendo escrita em RydenScript. O PowerShell é apenas o resultado da compilação.
 
-2. VARIÁVEIS NO <RS>
+---
 
+## 2. Variáveis no `<RS>`
+
+```rydenscript
 Ry Variavel "Ola RydenScript"
+```
 
 Gera no PowerShell:
 
+```powershell
 $Variavel = "Ola RydenScript"
+```
 
-3. MOSTRAR VARIÁVEL
+---
 
+## 3. Mostrar Variável
+
+```rydenscript
 Mostr Ry Variavel
+```
 
 Gera:
 
+```powershell
 Write-Output $Variavel
+```
 
-4. UM ÚNICO ARQUIVO POWERSHELL
+---
 
-Os comandos colocados dentro do <RS> podem contribuir para o mesmo arquivo .ps1.
+## 4. Um Único Arquivo PowerShell
+
+Os comandos colocados dentro do `<RS>` podem contribuir para o mesmo arquivo `.ps1`.
 
 Exemplos:
+- `powershell>c> mensagem`
+- `Administract>c> mensagem`
+- `abrir`
 
-powershell>c> mensagem
-Administract>c> mensagem
-abrir
+Assim, em vez de cada recurso gerar um arquivo separado, o `<RS>` pode reunir os códigos em uma única saída PowerShell.
 
-Assim, em vez de cada recurso gerar um arquivo separado, o <RS> pode reunir os códigos em uma única saída PowerShell.
+---
 
-5. DOWNLOAD
+## 5. Download
 
 O editor do RydenScript pode mostrar um botão para baixar o PowerShell compilado.
 
-Nome do arquivo:
+* **Nome do arquivo:** `rydenscript_rs.ps1`
 
-rydenscript_rs.ps1
+---
 
-6. OBJETIVO
+## 6. Objetivo
 
 A ideia é permitir que o RydenScript tenha recursos além da Web através da compilação para PowerShell.
 
-O programador continua escrevendo RydenScript.
+* O programador continua escrevendo RydenScript.
+* O PowerShell fica responsável pelo código gerado para recursos que precisam dele.
 
-O PowerShell fica responsável pelo código gerado para recursos que precisam dele.
+> **Frase da Ideia:**
+> *"Você programa em RydenScript.*
+> *O RydenScript programa o PowerShell."*
 
-FRASE DA IDEIA:
+**RS - RydenScript → PowerShell**
 
-"Você programa em RydenScript.
-O RydenScript programa o PowerShell."
+---
 
-RS - RydenScript → PowerShell
+### Exemplos de Estrutura e Comandos
 
-ESTRUTURA:
-<RS>
-...
-<RS>
+* **Estrutura:**
+  ```rydenscript
+  <RS>
+  ...
+  <RS>
+  ```
 
-VARIÁVEIS:
-Ry Variavel "Ola RydenScript"
-Mostr Ry Variavel
+* **Variáveis:**
+  ```rydenscript
+  Ry Variavel "Ola RydenScript"
+  Mostr Ry Variavel
+  ```
 
-POWER SHELL:
-powershell>c> mensagem "Ola"
+* **PowerShell:**
+  ```rydenscript
+  powershell>c> mensagem "Ola"
+  ```
 
-ADMINISTRACT:
-Administract>c> mensagem "Ola PowerShell"
+* **Administract:**
+  ```rydenscript
+  Administract>c> mensagem "Ola PowerShell"
+  ```
 
-ABRIR:
-abrir programa.exe
-abrir programa.exe espera 5
+* **Abrir:**
+  ```rydenscript
+  abrir programa.exe
+  abrir programa.exe espera 5
+  ```
 
-JANELA:
-Create Janel
+* **Janela:**
+  ```rydenscript
+  Create Janel
+  ```
 
-SWITCH:
-Switch Ry opcao
+* **Switch:**
+  ```rydenscript
+  Switch Ry opcao
 
-Caso 1
-    Mostr "Um"
-FimCaso
+  Caso 1
+      Mostr "Um"
+  FimCaso
 
-Caso 2
-    Mostr "Dois"
-FimCaso
+  Caso 2
+      Mostr "Dois"
+  FimCaso
 
-Padrao
-    Mostr "Outra opcao"
-FimCaso
+  Padrao
+      Mostr "Outra opcao"
+  FimCaso
 
-FimSwitch
+  FimSwitch
+  ```
 
+---
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-NOVAS ATUALIZAÇÕES DO <RS>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<hr style="border: 1px solid #ccc;">
 
-8. CREATE BUTTON
+# Novas Atualizações do `<RS>`
 
-O <RS> agora possui criação de botões para JanelRS.
+<hr style="border: 1px solid #ccc;">
 
-Sintaxe:
+## 8. Create Button
 
-Create Button | id: salvar | texto: "Salvar" | largura: 100 | altura: 40 | x: 25 | y: 400
+O `<RS>` agora possui criação de botões para `JanelRS`.
 
-Propriedades disponíveis:
-- id
-- texto
-- largura
-- altura
-- x
-- y
-- cor
-- cortexto
-- borda
-- add_click
-- add_tick
+* **Sintaxe:**
+  ```rydenscript
+  Create Button | id: salvar | texto: "Salvar" | largura: 100 | altura: 40 | x: 25 | y: 400
+  ```
 
-9. ADD_CLICK
+* **Propriedades disponíveis:**
+  - `id`
+  - `texto`
+  - `largura`
+  - `altura`
+  - `x`
+  - `y`
+  - `cor`
+  - `cortexto`
+  - `borda`
+  - `add_click`
+  - `add_tick`
 
-O Create Button pode receber um evento de clique.
+---
 
-Exemplo:
+## 9. Add_Click
 
-Create Button | id: botao | texto: "Clique" | add_click: código PowerShell
+O `Create Button` pode receber um evento de clique.
 
-O compilador transforma isso em um evento PowerShell:
+* **Exemplo:**
+  ```rydenscript
+  Create Button | id: botao | texto: "Clique" | add_click: código PowerShell
+  ```
 
-$botao.Add_Click({
-    código PowerShell
-})
+* O compilador transforma isso em um evento PowerShell:
+  ```powershell
+  $botao.Add_Click({
+      código PowerShell
+  })
+  ```
 
-10. ADD_TICK
+---
 
-O Create Button também pode receber um evento periódico.
+## 10. Add_Tick
 
-Exemplo:
+O `Create Button` também pode receber um evento periódico.
 
-Create Button | id: botao | texto: "Loop" | add_tick: código PowerShell
+* **Exemplo:**
+  ```rydenscript
+  Create Button | id: botao | texto: "Loop" | add_tick: código PowerShell
+  ```
 
-O compilador cria um System.Windows.Forms.Timer e executa o código no evento Tick.
+* O compilador cria um `System.Windows.Forms.Timer` e executa o código no evento `Tick`.
 
-11. CREATE TEXTBOX
+---
 
-Foi adicionada a base para criação de caixas de texto dentro de JanelRS.
+## 11. Create Textbox
 
-Exemplo:
+Foi adicionada a base para criação de caixas de texto dentro de `JanelRS`.
 
-Create Textbox | id: editor | largura: 640 | altura: 350 | x: 25 | y: 25
+* **Exemplo:**
+  ```rydenscript
+  Create Textbox | id: editor | largura: 640 | altura: 350 | x: 25 | y: 25
+  ```
 
-12. JANELRS
+---
 
-Create Janel cria uma janela PowerShell usando Windows Forms.
+## 12. JanelRS
 
-Exemplo:
+`Create Janel` cria uma janela PowerShell usando Windows Forms.
 
-Create Janel
+* **Exemplo:**
+  ```rydenscript
+  Create Janel
+  ```
 
-A janela é preparada antes dos componentes e somente depois é aberta com ShowDialog().
+A janela é preparada antes dos componentes e somente depois é aberta com `ShowDialog()`.
 
-13. BLOCO DE NOTAS
+---
 
-Com JanelRS, Textbox e Button, o <RS> pode montar aplicações como um bloco de notas.
+## 13. Bloco de Notas
 
-Exemplo de estrutura:
+Com `JanelRS`, `Textbox` e `Button`, o `<RS>` pode montar aplicações como um bloco de notas.
 
-<RS>
+* **Exemplo de estrutura:**
+  ```rydenscript
+  <RS>
 
-Create Janel | titulo: "Bloco de Notas RydenScript" | largura: 700 | altura: 500
+  Create Janel | titulo: "Bloco de Notas RydenScript" | largura: 700 | altura: 500
 
-Create Textbox | id: editor | largura: 640 | altura: 350 | x: 25 | y: 25
+  Create Textbox | id: editor | largura: 640 | altura: 350 | x: 25 | y: 25
 
-Create Button | id: salvar | texto: "Salvar" | x: 25 | y: 400
+  Create Button | id: salvar | texto: "Salvar" | x: 25 | y: 400
 
-Create Button | id: limpar | texto: "Limpar" | x: 140 | y: 400
+  Create Button | id: limpar | texto: "Limpar" | x: 140 | y: 400
 
-Create Button | id: sair | texto: "Sair" | x: 255 | y: 400
+  Create Button | id: sair | texto: "Sair" | x: 255 | y: 400
 
-<RS>
+  <RS>
+  ```
 
-14. COMPILAÇÃO
+---
 
-Os novos componentes continuam sendo escritos em RydenScript.
+## 14. Compilação
 
-O compilador do RydenScript transforma os componentes em código PowerShell.
+* Os novos componentes continuam sendo escritos em RydenScript.
+* O compilador do RydenScript transforma os componentes em código PowerShell.
 
-RydenScript continua sendo a linguagem usada pelo programador.
-PowerShell continua sendo o alvo gerado pelo <RS>.
+> RydenScript continua sendo a linguagem usada pelo programador.  
+> PowerShell continua sendo o alvo gerado pelo `<RS>`.
 
-15. OBJETIVO DA ATUALIZAÇÃO
+---
 
-Expandir o <RS> para permitir criação de interfaces desktop e automações usando PowerShell sem retirar as bibliotecas e recursos já existentes do RydenScript.
+## 15. Objetivo da Atualização
 
-Frase:
+Expandir o `<RS>` para permitir criação de interfaces desktop e automações usando PowerShell sem retirar as bibliotecas e recursos já existentes do RydenScript.
 
-"Você programa em RydenScript.
-O RydenScript programa o PowerShell."`
+> **Frase:**
+> *"Você programa em RydenScript.*
+> *O RydenScript programa o PowerShell."*
 
 
 ---
