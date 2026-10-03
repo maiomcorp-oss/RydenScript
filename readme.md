@@ -473,7 +473,90 @@ Expandir o `<RS>` para permitir criação de interfaces desktop e automações u
 O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 
 ## RydenScript v7.0.0
+# Novidades da v7.0.0
 
+## Bibliotecas da Tag `<f>`
+
+### 1. Notification
+* **Exemplo:** `<f> notification "sucesso" "Operação concluída com êxito!"`
+* **Resultado:** Aparece uma caixinha verde com a mensagem.
+* **Tipos possíveis:** `"sucesso"`, `"erro"`, `"aviso"`, `"info"`.
+
+### 2. Modal
+* **Comando:** `<f> modal "Aviso" "Você precisa confirmar sua ação!"`
+* **Resultado:** Abre uma janelinha centralizada com título e mensagem, além de botão para fechar.
+
+### 3. Theme
+* **Como funciona:**
+  * `<f> theme "dark"` → Aplica um fundo escuro com texto branco.
+  * `<f> theme "light"` → Fundo claro com texto preto.
+  * `<f> theme "neon"` → Fundo preto com texto neon azul.
+
+### 4. Geomap
+* **Como funciona:**
+  * `<f> geomap "-27.6455" "-48.6694"`
+* Mostra um mapa interativo centralizado em Palhoça/SC.
+* O desenvolvedor só precisa passar latitude e longitude. O mapa aparece embutido, com zoom ajustável.
+* Essa biblioteca adiciona geolocalização ao RydenScript, permitindo criar aplicações que mostram lugares, rotas ou até dashboards com mapas.
+
+### 5. Animate
+* **Como funciona:**
+  * `<f> animate "fade" "Bem-vindo ao RydenScript!"` → Texto aparece suavemente.
+  * `<f> animate "slide" "Entrando em cena..."` → Texto desliza da esquerda.
+  * `<f> animate "bounce" "Pulando sem parar!"` → Texto fica quicando.
+* Essa biblioteca adiciona efeitos visuais ao RydenScript, deixando interfaces mais vivas e modernas.
+
+### 6. Storage
+* **Comando:** `<f> storage "tema" "dark"`
+* Salva a preferência de tema no navegador.
+
+### 7. Random
+* **Comando:** `<f> random 1 100`
+* Sorteia um número entre 1 e 100.
+
+### 8. Calendar
+* **Comando:** `<f> calendar "Reunião da comunidade RydenScript"`
+* Exibe um bloco com o evento marcado.
+
+---
+
+## Novos Comandos ao `<RS>`
+
+### 📌 Ry Dir
+* **Sintaxe:** `Ry Dir`
+* **Função:** Lista os arquivos e pastas do diretório atual.
+* **Resultado:** `Get-ChildItem`
+
+### 📌 Ry Copy
+* **Sintaxe:** `Ry Copy "arquivo.txt" "backup.txt"`
+* **Função:** Copia um arquivo para outro destino.
+* **Resultado:** `Copy-Item "arquivo.txt" -Destination "backup.txt"`
+
+### 📌 Ry Del
+* **Sintaxe:** `Ry Del "arquivo.txt"`
+* **Função:** Remove um arquivo do sistema.
+* **Resultado:** `Remove-Item "arquivo.txt"`
+
+### 📌 Ry Proc
+* **Sintaxe:** `Ry Proc`
+* **Função:** Lista os processos ativos no sistema.
+* **Resultado:** `Get-Process`
+
+### 📌 Ry Net
+* **Sintaxe:** `Ry Net`
+* **Função:** Testa a conexão de rede (ping).
+* **Resultado:** `Test-Connection google.com -Count 1`
+
+### Resumo dos Comandos do `<RS>`
+
+* **Ry Dir** → Lista arquivos e pastas.
+* **Ry Copy** → Copia arquivos.
+* **Ry Del** → Remove arquivos.
+* **Ry Proc** → Mostra processos ativos.
+* **Ry Net** → Testa conexão de rede.
+* **Ry Path** → Mostra diretório atual.
+* **Ry Env** → Lista variáveis de ambiente.
+* **Ry Date** → Mostra data e hora do sistema.
 
 ---
 ## 📈 Histórico de Versões
