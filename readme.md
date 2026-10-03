@@ -473,7 +473,6 @@ Expandir o `<RS>` para permitir criação de interfaces desktop e automações u
 O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 
 ## RydenScript v7.0.0
-# Novidades da v7.0.0
 
 ## Bibliotecas da Tag `<f>`
 
