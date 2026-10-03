@@ -469,7 +469,12 @@ Expandir o `<RS>` para permitir criação de interfaces desktop e automações u
 
 
 ---
+## RydenScript v6.0.0 documentação
+O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
+---
+## RydenScript v7.0.0
 
+---
 ## 📈 Histórico de Versões
 
 | Versão | Principais Novidades |
