@@ -210,7 +210,7 @@ Comandos para gestão de arquivos e tarefas administrativas.
 <page2>
 ```
 ## RydenScript v5.0.0 Documentação
-MUDANÇAS DO RYDENSCRIPT — <RS> E POWERSHELL
+`MUDANÇAS DO RYDENSCRIPT — <RS> E POWERSHELL
 
 1. <RS>
 
@@ -412,7 +412,7 @@ Expandir o <RS> para permitir criação de interfaces desktop e automações usa
 Frase:
 
 "Você programa em RydenScript.
-O RydenScript programa o PowerShell."
+O RydenScript programa o PowerShell."`
 
 
 ---
