@@ -581,7 +581,6 @@ exemplo3: use a sua criatividade e tente fazer gambiarras para fazer oque você 
 
 Desenvolvido com ☕ e dedicação por **Daniel Saldanha**.
 Inspirado na simplicidade e no poder da web moderna.
-
 ---
 *RydenScript - Transformando código em brincadeira de criança.*
 
