@@ -569,6 +569,8 @@ O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 | **v5.0.0** |RydenScript virou um magico , trazendo mais automação com a sua cartola e utilizando PowerShell. |
 | **v6.0.0** |RydenScript Resolveu melhorar seu proprio visual , Trazendo mais Leveza e Otimização. |
 | **v7.0.0** |RydenScript Trouxe mais Bibliotecas ao `<f>` e mais Comandos ao `<RS>`  |
+| **PWA** |RydenScript Ficou mais Compatível com varios Sistemas operacionais e agora disponivel Tambem para Mobile , link Oficial : https://maiomcorp-oss.github.io/RydenScriptPWA/ |
+
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
 exemplo1: alterne em paginas para diferentes estados, 
