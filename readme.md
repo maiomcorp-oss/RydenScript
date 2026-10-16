@@ -570,6 +570,7 @@ O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 | **v6.0.0** |RydenScript Resolveu melhorar seu proprio visual , Trazendo mais Leveza e Otimização. |
 | **v7.0.0** |RydenScript Trouxe mais Bibliotecas ao `<f>` e mais Comandos ao `<RS>`  |
 | **PWA** |RydenScript Ficou mais Compatível com varios Sistemas operacionais e agora disponivel Tambem para Mobile , link Oficial : https://maiomcorp-oss.github.io/RydenScriptPWA/ |
+| **v7.0.1** |RydenScript arrumou um bug no <RS> que não permitia quebras de linhas e nivel de caracteres altos em Add_click e Add_tick |
 
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
