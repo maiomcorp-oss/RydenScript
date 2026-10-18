@@ -571,7 +571,7 @@ O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 | **v7.0.0** |RydenScript Trouxe mais Bibliotecas ao `<f>` e mais Comandos ao `<RS>`  |
 | **PWA** |RydenScript Ficou mais Compatível com varios Sistemas operacionais e agora disponivel Tambem para Mobile , link Oficial : https://maiomcorp-oss.github.io/RydenScriptPWA/ |
 | **v7.0.1** |RydenScript arrumou um bug no <RS> que não permitia quebras de linhas e nivel de caracteres altos em Add_click e Add_tick |
-| **v7.0.2** | o RydenScript atualizou a biblioteca Bloco 2D agora podendo aplicar JavaScript nas paginas, por meio da palavra Extra `Execute`. |
+| **v7.0.2** | o RydenScript atualizou a biblioteca Bloco 2D agora podendo aplicar JavaScript nas paginas, por meio da palavra Extra `Execute`, tutorial de como usar no proprio Release da v7.0.2|
 
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
