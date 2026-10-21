@@ -557,6 +557,100 @@ O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 * **Ry Env** → Lista variáveis de ambiente.
 * **Ry Date** → Mostra data e hora do sistema.
 
+## Oque veio na V8.0.0
+
+`RydenScript v8.0.0
+
+
+
+Novos comandos ao <RS>
+
+Ry Local 
+
+Ry Processos
+
+Ry Conteudo
+
+Ry Socorro
+
+Ry Historia
+
+Ry Variavel
+
+Ry Cultura
+
+Ry Aleatorio
+
+Ry Politica
+
+Ry adaptador
+
+Ry IP
+
+segunda sessão
+
+Ry DataFuso	Get-TimeZone	Obtém o fuso horário
+Ry Disco	Get-PSDrive	Lista unidades e drives do PowerShell
+Ry VariavelAmbiente	Get-ChildItem Env:	Lista variáveis de ambiente
+Ry HistoricoEventos	Get-WinEvent -ListLog *	Lista logs de eventos disponíveis
+Ry Impressoras	Get-Printer	Lista impressoras instaladas
+Ry Tarefa	Get-ScheduledTask	Consulta tarefas agendadas
+Ry Firewall	Get-NetFirewallProfile	Consulta perfis do firewall
+Ry Conexao	Get-NetTCPConnection	Consulta conexões TCP
+Ry Usuario	Get-LocalUser	Lista contas de usuário locais
+Ry Grupo        Get-LocalGroup	Lista grupos locais
+
+terceira sessão
+
+Ry Certificados → Get-ChildItem Cert:\CurrentUser\My
+Ry VariaveisAmbiente → Get-ChildItem Env:
+Ry FusoHorario → Get-TimeZone (se tu já adicionou como Ry DataFuso, não precisa duplicar)
+Ry Erros → $Error
+Ry HistoricoComandos → Get-History (só vale se quiseres um alias diferente; tu já tem Ry Historia)
+Ry Preferencias → $PSDefaultParameterValues
+Ry CaminhoSistema → $env:PATH
+Ry Idioma → (Get-WinSystemLocale).Name
+Ry Plataforma → [Environment]::OSVersion
+Ry DiretorioUsuario → $HOME
+
+
+Novo comando de função para <RS>
+
+Exemplo: 
+
+Função | saudacao : Write-Output "Ola,mundo" |
+saudacao
+
+Exemplo2:
+
+Função | Somar : $resultado = 10 + 20 |
+Somar 
+
+
+Novo comando de Switch para o <RS>
+
+Exemplo:
+
+Switch | $opcao | Caso: 1 | Write-Output "UM" | Caso: 2 | Write-Output "Dois"|
+
+Saida do codigo: 
+
+switch ($opcao) {
+    1 { Write-Output "UM" }
+    2 { Write-Output "Dois" }
+}
+
+Exemplo2: 
+
+Switch | $idade | Caso: 12 | Write-output "Muito novo" | Caso: 90 | Write-output "Muito velho"
+
+Saida do codigo: 
+
+switch ($idade) {
+    12 { Write-Output "Muito novo" }
+    90 { Write-Output "Muito Velho" }
+}`
+
 ---
 ## 📈 Histórico de Versões
 
@@ -572,6 +666,7 @@ O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 | **PWA** |RydenScript Ficou mais Compatível com varios Sistemas operacionais e agora disponivel Tambem para Mobile , link Oficial : https://maiomcorp-oss.github.io/RydenScriptPWA/ |
 | **v7.0.1** |RydenScript arrumou um bug no <RS> que não permitia quebras de linhas e nivel de caracteres altos em Add_click e Add_tick |
 | **v7.0.2** | o RydenScript atualizou a biblioteca Bloco 2D agora podendo aplicar JavaScript nas paginas, por meio da palavra Extra `Execute`, tutorial de como usar no proprio Release da v7.0.2|
+| **v8.0.0** | A versão mais robusta em que foi adicionado diversos comandos uteis de automação ao <RS> acompanahdo de duas coisas muito inportantes na programação, o Function e o Switch. |
 
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
