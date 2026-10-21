@@ -559,97 +559,171 @@ O RydenScript continua a mesma Sintaxe ele so mudou a propria aparencia.
 
 ## Oque veio na V8.0.0
 
-`RydenScript v8.0.0
+# RydenScript v8.0.0
 
+**RydenScript** é uma linguagem de programação indie desenvolvida para simplificar a criação e a execução de comandos, utilizando uma sintaxe própria integrada ao PowerShell.
 
+A versão **8.0.0** apresenta novos comandos para o bloco `<RS>`, além de suporte a funções personalizadas e estruturas condicionais `Switch`.
 
-Novos comandos ao <RS>
+---
 
-Ry Local 
+## 🚀 Novos comandos do `<RS>`
 
-Ry Processos
+### Primeira sessão — Comandos Ry
 
-Ry Conteudo
+Novos comandos adicionados ao RydenScript:
 
-Ry Socorro
+- `Ry Local`
+- `Ry Processos`
+- `Ry Conteudo`
+- `Ry Socorro`
+- `Ry Historia`
+- `Ry Variavel`
+- `Ry Cultura`
+- `Ry Aleatorio`
+- `Ry Politica`
+- `Ry adaptador`
+- `Ry IP`
 
-Ry Historia
+### Segunda sessão — Sistema e gerenciamento
 
-Ry Variavel
+| Comando RydenScript | Comando PowerShell | Descrição |
+|---|---|---|
+| `Ry DataFuso` | `Get-TimeZone` | Obtém o fuso horário do sistema. |
+| `Ry Disco` | `Get-PSDrive` | Lista unidades e drives disponíveis no PowerShell. |
+| `Ry VariavelAmbiente` | `Get-ChildItem Env:` | Lista variáveis de ambiente. |
+| `Ry HistoricoEventos` | `Get-WinEvent -ListLog *` | Lista logs de eventos disponíveis. |
+| `Ry Impressoras` | `Get-Printer` | Lista impressoras instaladas. |
+| `Ry Tarefa` | `Get-ScheduledTask` | Consulta tarefas agendadas. |
+| `Ry Firewall` | `Get-NetFirewallProfile` | Consulta os perfis do firewall. |
+| `Ry Conexao` | `Get-NetTCPConnection` | Consulta conexões TCP. |
+| `Ry Usuario` | `Get-LocalUser` | Lista contas de usuário locais. |
+| `Ry Grupo` | `Get-LocalGroup` | Lista grupos locais. |
 
-Ry Cultura
+### Terceira sessão — Informações avançadas
 
-Ry Aleatorio
+| Comando RydenScript | Comando PowerShell | Descrição |
+|---|---|---|
+| `Ry Certificados` | `Get-ChildItem Cert:\CurrentUser\My` | Consulta certificados pessoais do usuário atual. |
+| `Ry VariaveisAmbiente` | `Get-ChildItem Env:` | Consulta variáveis de ambiente. |
+| `Ry FusoHorario` | `Get-TimeZone` | Obtém o fuso horário do sistema. |
+| `Ry Erros` | `$Error` | Consulta o histórico de erros da sessão PowerShell. |
+| `Ry HistoricoComandos` | `Get-History` | Consulta o histórico de comandos da sessão. |
+| `Ry Preferencias` | `$PSDefaultParameterValues` | Consulta valores padrão de parâmetros. |
+| `Ry CaminhoSistema` | `$env:PATH` | Consulta os caminhos de pesquisa de executáveis. |
+| `Ry Idioma` | `(Get-WinSystemLocale).Name` | Obtém a configuração regional do sistema. |
+| `Ry Plataforma` | `[Environment]::OSVersion` | Consulta informações da versão do sistema operacional. |
+| `Ry DiretorioUsuario` | `$HOME` | Consulta o diretório pessoal do usuário. |
 
-Ry Politica
+> **Observação:** `Ry DataFuso` e `Ry FusoHorario` utilizam o mesmo comando PowerShell. Se ambos forem implementados, não será necessário duplicar a lógica. O mesmo vale para `Ry VariavelAmbiente` e `Ry VariaveisAmbiente`.
 
-Ry adaptador
+---
 
-Ry IP
+## ⚙️ Novo comando de função
 
-segunda sessão
+O RydenScript passa a ter uma sintaxe proposta para declarar e chamar funções personalizadas dentro do bloco `<RS>`.
 
-Ry DataFuso	Get-TimeZone	Obtém o fuso horário
-Ry Disco	Get-PSDrive	Lista unidades e drives do PowerShell
-Ry VariavelAmbiente	Get-ChildItem Env:	Lista variáveis de ambiente
-Ry HistoricoEventos	Get-WinEvent -ListLog *	Lista logs de eventos disponíveis
-Ry Impressoras	Get-Printer	Lista impressoras instaladas
-Ry Tarefa	Get-ScheduledTask	Consulta tarefas agendadas
-Ry Firewall	Get-NetFirewallProfile	Consulta perfis do firewall
-Ry Conexao	Get-NetTCPConnection	Consulta conexões TCP
-Ry Usuario	Get-LocalUser	Lista contas de usuário locais
-Ry Grupo        Get-LocalGroup	Lista grupos locais
+### Exemplo 1 — Função de saudação
 
-terceira sessão
-
-Ry Certificados → Get-ChildItem Cert:\CurrentUser\My
-Ry VariaveisAmbiente → Get-ChildItem Env:
-Ry FusoHorario → Get-TimeZone (se tu já adicionou como Ry DataFuso, não precisa duplicar)
-Ry Erros → $Error
-Ry HistoricoComandos → Get-History (só vale se quiseres um alias diferente; tu já tem Ry Historia)
-Ry Preferencias → $PSDefaultParameterValues
-Ry CaminhoSistema → $env:PATH
-Ry Idioma → (Get-WinSystemLocale).Name
-Ry Plataforma → [Environment]::OSVersion
-Ry DiretorioUsuario → $HOME
-
-
-Novo comando de função para <RS>
-
-Exemplo: 
-
+```text
 Função | saudacao : Write-Output "Ola,mundo" |
 saudacao
+```
 
-Exemplo2:
+**Saída esperada:**
 
+```text
+Ola,mundo
+```
+
+### Exemplo 2 — Função de soma
+
+```text
 Função | Somar : $resultado = 10 + 20 |
-Somar 
+Somar
+```
 
+A função executa uma operação de soma e armazena o resultado na variável `$resultado`.
 
-Novo comando de Switch para o <RS>
+**Resultado da operação:** `30`
 
-Exemplo:
+> A exibição do resultado depende de como a função e o interpretador tratam a variável `$resultado`.
 
+---
+
+## 🔀 Novo comando `Switch`
+
+O comando `Switch` permite avaliar uma variável e executar diferentes blocos de código de acordo com os casos definidos.
+
+### Exemplo 1 — Opções numéricas
+
+**Código RydenScript:**
+
+```text
 Switch | $opcao | Caso: 1 | Write-Output "UM" | Caso: 2 | Write-Output "Dois"|
+```
 
-Saida do codigo: 
+**Representação equivalente em PowerShell:**
 
+```powershell
 switch ($opcao) {
     1 { Write-Output "UM" }
     2 { Write-Output "Dois" }
 }
+```
 
-Exemplo2: 
+Se `$opcao` tiver o valor `1`, a saída será `UM`. Se tiver o valor `2`, a saída será `Dois`.
 
-Switch | $idade | Caso: 12 | Write-output "Muito novo" | Caso: 90 | Write-output "Muito velho"
+### Exemplo 2 — Verificação de idade
 
-Saida do codigo: 
+**Código RydenScript:**
 
+```text
+Switch | $idade | Caso: 12 | Write-Output "Muito novo" | Caso: 90 | Write-Output "Muito velho"
+```
+
+**Representação equivalente em PowerShell:**
+
+```powershell
 switch ($idade) {
     12 { Write-Output "Muito novo" }
     90 { Write-Output "Muito Velho" }
-}`
+}
+```
+
+Nesse exemplo, o comando compara `$idade` com os valores definidos nos casos e executa o bloco correspondente.
+
+---
+
+## 🛠️ Integração com PowerShell
+
+O RydenScript utiliza o PowerShell para executar operações relacionadas ao sistema operacional e automatizar tarefas.
+
+Os comandos apresentados nesta documentação correspondem aos comandos e expressões PowerShell associados às funcionalidades planejadas para o RydenScript.
+
+A disponibilidade de alguns comandos pode depender da versão do Windows, dos módulos instalados e das permissões do usuário.
+
+---
+
+## 📌 Resumo da versão 8.0.0
+
+Principais novidades documentadas:
+
+- Novos comandos `Ry` para consulta de informações.
+- Comandos relacionados a processos, rede, discos e configurações do sistema.
+- Consultas de certificados, variáveis de ambiente, erros e histórico.
+- Nova sintaxe proposta para criação e chamada de funções.
+- Nova estrutura `Switch` com casos personalizados.
+- Maior integração com recursos do PowerShell.
+
+---
+
+**RydenScript — código próprio, sintaxe própria e desenvolvimento indie.**
+
+Desenvolvido por Daniel Saldanha, com auxílio de IA.
+
+Projeto oficial: https://maiomcorp-oss.github.io/RydenScript/
+
 
 ---
 ## 📈 Histórico de Versões
