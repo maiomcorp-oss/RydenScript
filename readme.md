@@ -742,12 +742,56 @@ Projeto oficial: https://maiomcorp-oss.github.io/RydenScript/
 | **v7.0.2** | o RydenScript atualizou a biblioteca Bloco 2D agora podendo aplicar JavaScript nas paginas, por meio da palavra Extra `Execute`, tutorial de como usar no proprio Release da v7.0.2|
 | **v8.0.0** | A versão mais robusta em que foi adicionado diversos comandos uteis de automação ao <RS> acompanahdo de duas coisas muito inportantes na programação, o Function e o Switch. |
 
-#defeitos que você deve achar que o RydenScript tem mais não tem :
-• Perda de desempenho (Performance): Linguagens focadas em máxima simplicidade e alta flexibilidade costumam ser interpretadas ou depender de uma máquina virtual pesada. Isso gera maior consumo de memória e lentidão se comparadas a linguagens compiladas de baixo nível (como C ou Rust).
-• Dificuldade de depuração (Debugging): Quando a sintaxe é flexível demais e aceita muitas formas diferentes de escrita, o compilador ou interpretador costuma emitir mensagens de erro vagas, tornando difícil encontrar a linha exata onde ocorreu uma falha lógica no código.
-• Erros em tempo de execução (Runtime Errors): Se a linguagem adotar tipagem dinâmica (onde as variáveis mudam de tipo livremente para facilitar a escrita), pequenos erros de digitação só serão descobertos quando o programa já estiver rodando, aumentando o risco de quebras no sistema.
-• Falta de ecossistema e bibliotecas: Por ser um projeto novo ou de nicho, os desenvolvedores enfrentam a falta de suporte para ferramentas modernas, ausência de bibliotecas prontas (frameworks) e pouca documentação para resolver problemas complexos.
-• Ambiguidade sintática: Tentar deixar o código parecido com a "linguagem humana" muitas vezes confunde o interpretador, exigindo que o programador gaste mais tempo contornando regras ambíguas do que focando na lógica do software.
+# 🛡️ RydenScript — Mitos e Equívocos
+
+## ❌ Defeitos que você pode imaginar que o RydenScript tem, mas não deve presumir que existam
+
+O **RydenScript** é um projeto independente que busca simplificar o desenvolvimento de aplicações por meio de uma sintaxe própria e recursos baseados em tecnologias como PowerShell, HTML, CSS e JavaScript.
+
+Algumas críticas comuns feitas a linguagens de programação simples ou a projetos independentes não devem ser automaticamente aplicadas ao RydenScript. Cada característica precisa ser avaliada com base no funcionamento real do projeto.
+
+### ⚡ 1. Perda de desempenho (Performance)
+
+**Equívoco:** Uma linguagem simples necessariamente apresenta baixo desempenho, consome muita memória ou depende de uma máquina virtual pesada.
+
+**Realidade:** A simplicidade da sintaxe não determina, por si só, o desempenho de uma linguagem. O desempenho do RydenScript depende de sua implementação, das tecnologias utilizadas e das operações executadas. Como o projeto utiliza PowerShell e tecnologias web, o custo de cada operação depende também dessas plataformas.
+
+### 🐞 2. Dificuldade de depuração (Debugging)
+
+**Equívoco:** Uma sintaxe flexível sempre resulta em mensagens de erro vagas e dificulta a localização de problemas.
+
+**Realidade:** A qualidade da depuração depende de como o interpretador, o compilador e os mecanismos de tratamento de erros foram implementados. Uma linguagem pode oferecer uma sintaxe simples sem necessariamente dificultar a identificação de falhas.
+
+### 🔧 3. Erros em tempo de execução (Runtime Errors)
+
+**Equívoco:** Uma linguagem que facilita a escrita de código inevitavelmente apresenta mais erros durante a execução.
+
+**Realidade:** Erros em tempo de execução podem ocorrer em qualquer linguagem. Sua frequência depende de fatores como validações, tratamento de exceções, lógica do programa e comportamento das tecnologias utilizadas. A simplicidade da sintaxe não significa, por si só, maior risco de falhas.
+
+### 📚 4. Falta de ecossistema e bibliotecas
+
+**Equívoco:** Por ser um projeto independente, o RydenScript não pode aproveitar bibliotecas ou recursos de outras tecnologias.
+
+**Realidade:** O RydenScript utiliza tecnologias existentes, como PowerShell, HTML, CSS e JavaScript, que possuem seus próprios recursos e ecossistemas. A integração com essas tecnologias pode ampliar as possibilidades do projeto. Entretanto, a disponibilidade de bibliotecas depende da compatibilidade com a implementação e a plataforma utilizada.
+
+### 🧩 5. Ambiguidade sintática
+
+**Equívoco:** Uma linguagem que utiliza comandos e estruturas mais simples ou próximos da linguagem humana necessariamente apresenta regras ambíguas.
+
+**Realidade:** Uma sintaxe própria pode ser simples e consistente quando suas regras são bem definidas. O comportamento de cada comando depende de como ele é reconhecido e processado pelo interpretador ou compilador do RydenScript.
+
+---
+
+## 🎯 Conclusão
+
+O RydenScript não deve ser avaliado apenas com base em suposições sobre linguagens simples ou projetos independentes.
+
+**Cada característica deve ser analisada de acordo com o código, a arquitetura, os testes e os recursos realmente implementados.**
+
+O objetivo do RydenScript é oferecer uma maneira acessível e prática de desenvolver aplicações, aproveitando tecnologias existentes e mantendo sua própria identidade como projeto independente.
+
+> **RydenScript — simplicidade na escrita, possibilidades no desenvolvimento.**
+
 
 
 
