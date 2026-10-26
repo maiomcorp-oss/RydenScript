@@ -742,6 +742,14 @@ Projeto oficial: https://maiomcorp-oss.github.io/RydenScript/
 | **v7.0.2** | o RydenScript atualizou a biblioteca Bloco 2D agora podendo aplicar JavaScript nas paginas, por meio da palavra Extra `Execute`, tutorial de como usar no proprio Release da v7.0.2|
 | **v8.0.0** | A versão mais robusta em que foi adicionado diversos comandos uteis de automação ao <RS> acompanahdo de duas coisas muito inportantes na programação, o Function e o Switch. |
 
+#defeitos que você deve achar que o RydenScript tem mais não tem :
+• Perda de desempenho (Performance): Linguagens focadas em máxima simplicidade e alta flexibilidade costumam ser interpretadas ou depender de uma máquina virtual pesada. Isso gera maior consumo de memória e lentidão se comparadas a linguagens compiladas de baixo nível (como C ou Rust).
+• Dificuldade de depuração (Debugging): Quando a sintaxe é flexível demais e aceita muitas formas diferentes de escrita, o compilador ou interpretador costuma emitir mensagens de erro vagas, tornando difícil encontrar a linha exata onde ocorreu uma falha lógica no código.
+• Erros em tempo de execução (Runtime Errors): Se a linguagem adotar tipagem dinâmica (onde as variáveis mudam de tipo livremente para facilitar a escrita), pequenos erros de digitação só serão descobertos quando o programa já estiver rodando, aumentando o risco de quebras no sistema.
+• Falta de ecossistema e bibliotecas: Por ser um projeto novo ou de nicho, os desenvolvedores enfrentam a falta de suporte para ferramentas modernas, ausência de bibliotecas prontas (frameworks) e pouca documentação para resolver problemas complexos.
+• Ambiguidade sintática: Tentar deixar o código parecido com a "linguagem humana" muitas vezes confunde o interpretador, exigindo que o programador gaste mais tempo contornando regras ambíguas do que focando na lógica do software.
+
+
 
 dicas: use sua criatividade e genialidade para conseguir fazer coisas complexas de jeito facil com os recursos existentes, 
 exemplo1: alterne em paginas para diferentes estados, 
