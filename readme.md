@@ -741,6 +741,7 @@ Projeto oficial: https://maiomcorp-oss.github.io/RydenScript/
 | **v7.0.1** |RydenScript arrumou um bug no <RS> que não permitia quebras de linhas e nivel de caracteres altos em Add_click e Add_tick |
 | **v7.0.2** | o RydenScript atualizou a biblioteca Bloco 2D agora podendo aplicar JavaScript nas paginas, por meio da palavra Extra `Execute`, tutorial de como usar no proprio Release da v7.0.2|
 | **v8.0.0** | A versão mais robusta em que foi adicionado diversos comandos uteis de automação ao <RS> acompanhado de duas coisas muito importantes na programação, o `Function` e o ´Switch´. |
+| **v9.0.0** |o RydenScript não depende do Msedge instalado pois agora tem o arquivo especifico necessário em sua pasta explicação no release. |
 
 # 🛡️ RydenScript — Mitos e Equívocos
 
