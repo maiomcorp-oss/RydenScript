@@ -716,6 +716,9 @@ Principais novidades documentadas:
 - Nova estrutura `Switch` com casos personalizados.
 - Maior integração com recursos do PowerShell.
 
+
+# RydenScript v9.0.0 atualização que Fez o RydenScript não Depender mais do Msedge
+
 ---
 
 **RydenScript — código próprio, sintaxe própria e desenvolvimento indie.**
@@ -724,6 +727,178 @@ Desenvolvido por Daniel Saldanha, com auxílio de IA.
 
 Projeto oficial: https://maiomcorp-oss.github.io/RydenScript/
 
+# RydenScript v10.0.0
+
+## 🎉 Um marco histórico!
+
+Conseguimos alcançar um marco histórico: **o RydenScript chegou à versão 10.0.0!**
+
+Nesta versão, foram adicionadas novas tags que expandem as possibilidades da linguagem, incluindo variáveis, operações matemáticas, condições, entrada de dados e funções.
+
+Confira todas as novidades abaixo!
+
+---
+
+## 🆕 Novas tags
+
+### 1. Variáveis — `<v>`
+
+A tag `<v>` permite criar variáveis e armazenar valores.
+
+**Sintaxe:**
+```rs
+<v> nome | valor
+```
+
+**Exemplos:**
+```rs
+<v> Numero | 1
+<v> Texto | "Ola"
+```
+
+---
+
+### 2. Exibir — `<exibir>`
+
+A tag `<exibir>` permite exibir valores, textos, variáveis e resultados de operações matemáticas na janela.
+
+**Exemplo:**
+```rs
+<v> texto | "oi"
+<exibir> texto <exibir>
+```
+
+**Resultado esperado:**
+```text
+oi
+```
+
+#### Operações matemáticas
+
+Também é possível realizar operações matemáticas utilizando variáveis.
+
+**Exemplo:**
+```rs
+<v> n1 | 1
+<v> n2 | 1
+
+<exibir> n1 + n2 <exibir>
+```
+
+**Resultado esperado:**
+```text
+2
+```
+
+Também é possível realizar operações diretamente:
+
+```rs
+<exibir> 1 + 1 <exibir>
+```
+
+Operadores disponíveis incluem:
+
+- `+` Adição
+- `-` Subtração
+- `*` Multiplicação
+- `/` Divisão
+
+---
+
+### 3. Condições — `<se>`
+
+A tag `<se>` permite executar determinado código caso uma condição seja verdadeira.
+
+**Sintaxe:**
+```rs
+<se> variavel = valor | codigo
+```
+
+**Exemplo:**
+```rs
+<v> idade | 40
+
+<se> idade = 13 | <exibir> Adolescente <exibir>
+<se> idade = 40 | <exibir> adulto <exibir>
+```
+
+Nesse exemplo, o RydenScript verifica o valor da variável `idade` e executa o código correspondente à condição.
+
+---
+
+### 4. Entrada de dados — `input`
+
+A entrada de dados permite solicitar informações ao usuário e armazená-las em variáveis utilizando a tag `<v>`.
+
+**Sintaxe:**
+```rs
+<v> nome | input "Mensagem"
+```
+
+#### Exemplo 1: Calculadora
+
+```rs
+<v> n1 | input "Digite um numero"
+<v> n2 | input "Digite outro numero"
+
+<exibir> n1 + n2 <exibir>
+```
+
+O usuário informa dois números e o RydenScript realiza a soma.
+
+#### Exemplo 2: Perguntas
+
+```rs
+<v> pergunta | input "Oque vc achou do site?"
+
+<se> pergunta = "Legal" | <exibir> valeu <exibir>
+```
+
+Nesse exemplo, o programa solicita uma resposta e verifica se o usuário digitou `"Legal"`.
+
+---
+
+### 5. Funções — `<function>` e `<chamar>`
+
+As funções permitem armazenar blocos de código para executá-los posteriormente.
+
+**Sintaxe:**
+```rs
+<function> id | codigo |
+<chamar> id
+```
+
+**Exemplo:**
+```rs
+<function> somar | <exibir> 1 + 1 <exibir> |
+
+<chamar> somar
+```
+
+Nesse exemplo, a função `somar` contém uma operação matemática que será executada quando chamada.
+
+---
+
+## 📌 Resumo das novidades
+
+| Tag / Recurso | Função |
+|---|---|
+| `<v>` | Criar variáveis |
+| `<exibir>` | Exibir informações |
+| `<se>` | Verificar condições |
+| `input` | Receber dados do usuário |
+| `<function>` | Criar funções |
+| `<chamar>` | Executar funções |
+
+---
+
+## 🏁 Fim
+
+Essas foram as novas funcionalidades adicionadas ao **RydenScript v10.0.0**!
+
+Um grande passo para a evolução da linguagem e de seu ecossistema.
+
+**RydenScript v10.0.0 — Um novo marco na história do projeto!**
 
 ---
 ## 📈 Histórico de Versões
