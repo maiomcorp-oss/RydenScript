@@ -716,9 +716,6 @@ Principais novidades documentadas:
 - Nova estrutura `Switch` com casos personalizados.
 - Maior integração com recursos do PowerShell.
 
-
-# RydenScript v9.0.0 atualização que Fez o RydenScript não Depender mais do Msedge
-
 ---
 
 **RydenScript — código próprio, sintaxe própria e desenvolvimento indie.**
