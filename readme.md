@@ -897,6 +897,194 @@ Um grande passo para a evolução da linguagem e de seu ecossistema.
 
 **RydenScript v10.0.0 — Um novo marco na história do projeto!**
 
+# RydenScript v11.0.0
+
+## Sobre a atualização
+
+O **RydenScript v11.0.0** foi desenvolvido com o objetivo de aumentar a velocidade e melhorar o desempenho geral da linguagem.
+
+Nesta atualização, o código-fonte passou por otimizações, removendo redundâncias e aprimorando processos internos para tornar a execução mais eficiente.
+
+Além das melhorias de desempenho, esta versão também tem como objetivo ampliar a documentação oficial do RydenScript, documentando bibliotecas e funcionalidades que já existiam, mas ainda não haviam sido devidamente apresentadas.
+
+---
+
+## Bibliotecas específicas do RydenScript
+
+O RydenScript possui diversas bibliotecas próprias, desenvolvidas para oferecer funcionalidades específicas sem exigir que o usuário escreva grandes quantidades de código.
+
+A seguir estão algumas das bibliotecas disponíveis e suas respectivas funcionalidades.
+
+### Pesquisa e navegação
+
+| Biblioteca | Funcionalidade |
+|---|---|
+| `barraPesquisaGoogle` | Cria uma barra de pesquisa que direciona as buscas ao Google. |
+| `irTopo` | Cria um botão que leva o usuário de volta ao topo da página. |
+| `irpara` | Cria um botão que redireciona o usuário para uma URL. |
+| `pagiamento` | Cria uma caixa de texto para inserir uma senha-chave que redireciona para uma página. |
+
+### Texto e conversão
+
+| Biblioteca | Funcionalidade |
+|---|---|
+| `espelharTexto` | Inverte o texto informado. |
+| `encriptarB64` | Codifica um texto utilizando Base64. |
+| `decriptarB64` | Decodifica textos codificados em Base64. |
+| `criarTextoBaixavel` | Cria uma caixa para baixar um texto. |
+| `contadorCaracteres` | Conta os caracteres digitados em uma caixa de texto. |
+| `caixaAlta` | Exibe o texto em letras maiúsculas. |
+| `caixaBaixa` | Exibe o texto em letras minúsculas. |
+| `copiar` | Cria um botão que copia automaticamente um texto para a área de transferência. |
+
+### Ferramentas e produtividade
+
+| Biblioteca | Funcionalidade |
+|---|---|
+| `listaTarefas` | Cria uma caixa de texto para registrar tarefas e gerar notas de atividades. |
+| `gerarSenha` | Gera uma senha aleatória de 12 dígitos. |
+| `calculadora` | Cria uma calculadora. |
+| `calculadoraIMC` | Realiza cálculos de IMC. |
+| `temporizador` | Cria uma contagem regressiva e avisa quando o tempo termina. |
+| `selecionarData` | Permite selecionar uma data. |
+| `conversorBRL` | Converte valores informados em dólares para reais. |
+| `rolarDado` | Cria e lança um dado com um limite numérico definido. |
+
+### Interface e elementos visuais
+
+| Biblioteca | Funcionalidade |
+|---|---|
+| `quadroDesenho` | Cria uma área de desenho com um botão para limpar o quadro. |
+| `telaCheia` | Permite colocar a página em tela cheia após clicar em um botão. |
+| `interface` | Cria elementos de interface com parâmetros de altura e cor. |
+| `bloco2D` | Cria blocos visuais personalizáveis, com suporte a diferentes funcionalidades e integração com JavaScript. |
+| `grid` | Cria uma grade com dimensões definidas pelo usuário. |
+| `tab` | Biblioteca adicional para criação de elementos de interface. |
+
+**Observação:** A biblioteca `interface` apresenta problemas atualmente. Recomenda-se utilizar `bloco2D` como alternativa.
+
+### Sistema e dispositivo
+
+| Biblioteca | Funcionalidade |
+|---|---|
+| `gravador` | Grava a voz do usuário em um elemento de áudio, mediante permissão. |
+| `localizacao` | Exibe a localização do usuário em tempo real, mediante permissão. |
+| `vibrar` | Faz o dispositivo móvel vibrar. |
+| `detectarTeclas` | Exibe a última tecla pressionada pelo usuário. |
+| `confirmarSaida` | Solicita confirmação antes de sair da página. |
+| `notificar` | Exibe uma notificação com o texto informado. |
+| `imprimir` | Permite imprimir a página. |
+
+### Áudio e comunicação
+
+| Biblioteca | Funcionalidade |
+|---|---|
+| `som` | Cria um elemento de áudio que reproduz o som de uma URL após interação. |
+| `chamarZap` | Biblioteca de chamada relacionada ao WhatsApp. Funcionalidade ainda não documentada completamente. |
+| `message` | Biblioteca de comunicação P2P. Atualmente não funciona corretamente. |
+
+---
+
+## Exemplos de utilização
+
+Abaixo estão alguns exemplos de sintaxe das bibliotecas documentadas:
+
+```rs
+<f> barraPesquisaGoogle
+
+<f> rolarDado 10
+
+<f> espelharTexto "RydenScript"
+
+<f> listaTarefas
+
+<f> telaCheia
+
+<f> calculadoraIMC
+
+<f> encriptarB64 "RydenScript"
+
+<f> decriptarB64
+
+<f> quadroDesenho
+
+<f> temporizador 10
+
+<f> interface | altura: 1 | cor: black
+
+<f> pagiamento
+
+<f> selecionarData
+
+<f> conversorBRL
+
+<f> gerarSenha
+
+<f> contadorCaracteres
+
+<f> irTopo
+
+<f> gravador
+
+<f> localizacao
+
+<f> vibrar
+
+<f> detectarTeclas
+
+<f> confirmarSaida
+
+<f> chamarZap
+
+<f> criarTextoBaixavel "RydenScript"
+
+<f> calculadora
+
+<f> bloco2D 50 50 50 50 gray normal
+
+<f> grid 1 1
+
+<f> message P2P
+
+<f> tab
+
+<f> som url "(URL)"
+
+<f> notificar "(texto)"
+
+<f> irpara "(URL)"
+
+<f> copiar "(texto)"
+
+<f> caixaAlta "(texto)"
+
+<f> caixaBaixa
+
+<f> imprimir
+```
+
+---
+
+## Observações importantes
+
+- Algumas bibliotecas dependem de permissões concedidas pelo usuário, como `gravador` e `localizacao`.
+- A biblioteca `interface` apresenta problemas e não é recomendada atualmente.
+- A biblioteca `message P2P` não está funcionando corretamente.
+- A biblioteca `chamarZap` ainda precisa de documentação complementar.
+- A codificação Base64 não é criptografia segura. Ela apenas transforma a representação do texto.
+
+---
+
+## Conclusão
+
+Estas são algumas das bibliotecas específicas que já existiam no RydenScript, mas ainda não haviam sido documentadas oficialmente.
+
+Embora algumas bibliotecas já possuíssem documentação, a maioria ainda não tinha suas funcionalidades devidamente explicadas.
+
+Com o **RydenScript v11.0.0**, o objetivo é melhorar não apenas o desempenho da linguagem, mas também sua documentação e acessibilidade para desenvolvedores.
+
+**RydenScript — Simples, direto e lógico.**
+
 ---
 ## 📈 Histórico de Versões
 
@@ -915,6 +1103,7 @@ Um grande passo para a evolução da linguagem e de seu ecossistema.
 | **v8.0.0** | A versão mais robusta em que foi adicionado diversos comandos uteis de automação ao <RS> acompanhado de duas coisas muito importantes na programação, o `Function` e o `Switch`. |
 | **v9.0.0** |o RydenScript não depende do Msedge instalado pois agora tem o arquivo especifico necessário em sua pasta explicação no release. |
 | **v10.0.0** |Novas variaveis para Operações matematica e logica de programação, as Novidades estão no Release do RydenScript v10.0.0 |
+| **v11.0.0** | Atualização de Desempenho e de Documentação das Bibliotecas.|
 
 # 🛡️ RydenScript — Mitos e Equívocos
 
