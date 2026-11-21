@@ -1085,6 +1085,166 @@ Com o **RydenScript v11.0.0**, o objetivo é melhorar não apenas o desempenho d
 
 **RydenScript — Simples, direto e lógico.**
 
+# RydenScript v12.0.0
+
+**Uma linguagem de programação baseada em tags, desenvolvida para produtividade e simplicidade.**
+
+O RydenScript é uma linguagem de programação de propósito geral que utiliza uma sintaxe direta por meio de tags. Seu objetivo é facilitar a criação de páginas, interfaces, softwares e automações.
+
+O projeto utiliza HTML, CSS, JavaScript e PowerShell, combinando tecnologias da Web com recursos de automação do Windows.
+
+## Novidades da versão 12.0.0
+
+A versão 12.0.0 traz melhorias na estrutura de configuração das páginas, permitindo personalizar diferentes características diretamente pelo código RydenScript.
+
+### 1. Configuração do idioma
+
+Com a biblioteca `idioma`, é possível definir o idioma principal do documento.
+
+**Sintaxe:**
+
+```text
+<f> idioma "pt-BR"
+```
+
+Exemplo para inglês:
+
+```text
+<f> idioma "en"
+```
+
+O idioma é informado ao navegador por meio do atributo `lang` do HTML.
+
+Isso identifica o idioma do documento, mas não traduz automaticamente os textos.
+
+### 2. Título personalizado
+
+A biblioteca `titulo` permite definir o título exibido na aba do navegador.
+
+**Sintaxe:**
+
+```text
+<f> titulo "Meu Projeto"
+```
+
+O compilador utiliza esse valor no elemento `<title>` do HTML gerado.
+
+Assim, não é necessário abrir o HTML compilado para alterar manualmente o título padrão.
+
+### 3. Ícone personalizado
+
+A biblioteca `icone` permite definir o favicon da página.
+
+O favicon é o pequeno ícone exibido na aba do navegador.
+
+**Sintaxe:**
+
+```text
+<f> icone "logo.png"
+```
+
+Também é possível informar uma URL de imagem:
+
+```text
+<f> icone "https://exemplo.com/logo.png"
+```
+
+O compilador adiciona automaticamente a referência ao favicon no HTML gerado.
+
+### 4. Ajuste automático de tela
+
+A biblioteca `autoAjuste` adapta a escala da página ao espaço disponível na tela.
+
+**Sintaxe:**
+
+```text
+<f> autoAjuste
+```
+
+A implementação utiliza uma área de referência de:
+
+- Largura: 800 pixels.
+- Altura: 450 pixels.
+
+O ajuste considera a largura e a altura disponíveis e utiliza a menor escala calculada, preservando a proporção da página.
+
+O recurso também permite que os componentes acompanhem a escala aplicada, sem precisar criar manualmente uma configuração para cada resolução.
+
+### 5. Personalização do fundo
+
+A tag `<fundo>` permite definir a cor de fundo da página.
+
+**Sintaxe:**
+
+```text
+<fundo> white
+```
+
+Outro exemplo:
+
+```text
+<fundo> gray
+```
+
+## Exemplo de estrutura completa
+
+Abaixo está um exemplo reunindo as configurações introduzidas na versão 12.0.0:
+
+```text
+<page1>
+<fundo> white
+<f> idioma "pt-BR"
+<f> titulo "Meu Projeto"
+<f> icone "logo.png"
+<f> autoAjuste
+
+<t> Bem-vindo ao meu projeto!
+
+<page1>
+```
+
+Nesse exemplo, o RydenScript configura o fundo, o idioma, o título, o favicon e o ajuste automático da página.
+
+## Tecnologias utilizadas
+
+O RydenScript utiliza:
+
+- **HTML:** estrutura das páginas.
+- **CSS:** estilos e aparência.
+- **JavaScript:** interpretação e funcionalidades.
+- **PowerShell:** recursos de automação no Windows.
+
+## Filosofia do projeto
+
+O RydenScript busca oferecer uma programação direta, com sintaxe baseada em tags e parâmetros separados pelo caractere `|`.
+
+A proposta é facilitar o desenvolvimento sem exigir estruturas excessivamente complexas.
+
+## Histórico de versões
+
+| Versão | Destaques |
+|---|---|
+| v11.0.0 | Otimizações de desempenho e redução de redundâncias no código |
+| v12.0.0 | Configuração de idioma, título, favicon, fundo e ajuste automático de tela |
+
+## Criador
+
+**Daniel Saldanha Palheta Arraes**
+
+**Maiom Corp.**
+
+Projeto independente desenvolvido com tecnologias Web e ferramentas de automação.
+
+## Repositórios e páginas
+
+- Site oficial: https://maiomcorp-oss.github.io/RydenScript/
+- PWA: https://maiomcorp-oss.github.io/RydenScriptPWA/
+- GitHub: https://github.com/maiomcorp-oss/RydenScript
+
+---
+
+**RydenScript v12.0.0 — mais controle sobre a página, diretamente pelo código.**
+
 ---
 ## 📈 Histórico de Versões
 
@@ -1104,6 +1264,8 @@ Com o **RydenScript v11.0.0**, o objetivo é melhorar não apenas o desempenho d
 | **v9.0.0** |o RydenScript não depende do Msedge instalado pois agora tem o arquivo especifico necessário em sua pasta explicação no release. |
 | **v10.0.0** |Novas variaveis para Operações matematica e logica de programação, as Novidades estão no Release do RydenScript v10.0.0 |
 | **v11.0.0** | Atualização de Desempenho e de Documentação das Bibliotecas.|
+| **v12.0.0** | Configuração de idioma, título, favicon, fundo e ajuste automático de tela.|
+
 
 # 🛡️ RydenScript — Mitos e Equívocos
 
