@@ -1,0 +1,411 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset='UTF-8'><title>RydenScript | Linguagem de Programação</title><link rel="icon" href="RDS.ico"><style>.btn { padding: 8px 12px; border: none; cursor: pointer; margin: 5px; } .grid { display: grid; gap: 10px; } .tab { border: 1px solid #ccc; padding: 10px; margin: 5px; }</style></head><body style="background-color: #ffffff;"><div id="page1" class="ryden-page" style="display: block; width: 100%; min-height: 100vh; padding: 10px; box-sizing: border-box;">
+<style>#page1 { background-color: white !important; }</style>
+
+        <script>
+        (function() {
+
+            const LARGURA_BASE = 800;
+            const ALTURA_BASE = 450;
+
+            function ajustarTela() {
+
+                document.querySelectorAll('.ryden-page')
+                    .forEach(pagina => {
+
+                        const largura = document.documentElement.clientWidth;
+                        const altura = document.documentElement.clientHeight;
+
+                        const escala = Math.min(
+                            largura / LARGURA_BASE,
+                            altura / ALTURA_BASE
+                        );
+
+                        pagina.style.width = LARGURA_BASE + 'px';
+                        pagina.style.height = ALTURA_BASE + 'px';
+
+                        pagina.style.zoom = escala;
+
+                    });
+            }
+
+            window.addEventListener('resize', ajustarTela);
+            window.addEventListener('load', ajustarTela);
+
+            requestAnimationFrame(ajustarTela);
+
+        })();
+        </script>
+    
+            <div
+                id="bloco_foojozffc"
+                class="ryden-bloco-colisor"
+                data-x="0"
+                data-y="0"
+                data-tipo="normal"
+                data-extra=""
+                
+                onclick="
+                    const tipoBloco = this.dataset.tipo;
+                    const paramExtra = this.dataset.extra || '';
+
+                    if (tipoBloco === 'atualizar' && paramExtra) {
+                        const alvo = document.getElementById(paramExtra);
+
+                        if (alvo) {
+                            alvo.innerText = 'Atualizado via Bloco2D!';
+                        }
+                    }
+
+                    else if (
+                        tipoBloco === 'clique_pagina' &&
+                        paramExtra
+                    ) {
+                        document.querySelectorAll('.ryden-page')
+                            .forEach(function(pg) {
+                                pg.style.display = 'none';
+                            });
+
+                        const destino =
+                            document.getElementById(paramExtra);
+
+                        if (destino) {
+                            destino.style.display = 'block';
+                        }
+                    }
+
+                    else if (
+                        tipoBloco === 'clique_mostrar' &&
+                        paramExtra
+                    ) {
+                        const blocoOculto =
+                            document.getElementById(paramExtra);
+
+                        if (blocoOculto) {
+                            blocoOculto.style.display = 'block';
+                        }
+                    }
+
+                    if (this.dataset.execute) {
+                        try {
+                            new Function(this.dataset.execute).call(this);
+                        } catch (e) {
+                            console.error(
+                                'Erro no RydenScript Execute:',
+                                e
+                            );
+                        }
+                    }
+                "
+                style="
+                    position:absolute;
+                    width:820px;
+                    height:50px;
+                    left:0px;
+                    top:0px;
+                    background-color: orange;
+                    cursor:pointer;
+                    border:1.5px solid rgba(255,255,255,0.4);
+                    box-sizing:border-box;
+                    transition:transform 0.3s ease;
+                ">
+            </div>
+        <h1 style="margin: 5px 0; color: lightblue; font-size: 15px; font-family: Arial; position: absolute; left: 10px; ">RydenScript</h1>
+
+            <div
+                id="bloco_2zy115k4c"
+                class="ryden-bloco-colisor"
+                data-x="0"
+                data-y="50"
+                data-tipo="normal"
+                data-extra=""
+                
+                onclick="
+                    const tipoBloco = this.dataset.tipo;
+                    const paramExtra = this.dataset.extra || '';
+
+                    if (tipoBloco === 'atualizar' && paramExtra) {
+                        const alvo = document.getElementById(paramExtra);
+
+                        if (alvo) {
+                            alvo.innerText = 'Atualizado via Bloco2D!';
+                        }
+                    }
+
+                    else if (
+                        tipoBloco === 'clique_pagina' &&
+                        paramExtra
+                    ) {
+                        document.querySelectorAll('.ryden-page')
+                            .forEach(function(pg) {
+                                pg.style.display = 'none';
+                            });
+
+                        const destino =
+                            document.getElementById(paramExtra);
+
+                        if (destino) {
+                            destino.style.display = 'block';
+                        }
+                    }
+
+                    else if (
+                        tipoBloco === 'clique_mostrar' &&
+                        paramExtra
+                    ) {
+                        const blocoOculto =
+                            document.getElementById(paramExtra);
+
+                        if (blocoOculto) {
+                            blocoOculto.style.display = 'block';
+                        }
+                    }
+
+                    if (this.dataset.execute) {
+                        try {
+                            new Function(this.dataset.execute).call(this);
+                        } catch (e) {
+                            console.error(
+                                'Erro no RydenScript Execute:',
+                                e
+                            );
+                        }
+                    }
+                "
+                style="
+                    position:absolute;
+                    width:820px;
+                    height:500px;
+                    left:0px;
+                    top:50px;
+                    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_K6bJwTV1_2W2BLNrobSVfiRnMLaSjPkF5NAlenkthA&s=10'); background-size: cover;
+                    cursor:pointer;
+                    border:1.5px solid rgba(255,255,255,0.4);
+                    box-sizing:border-box;
+                    transition:transform 0.3s ease;
+                ">
+            </div>
+        <button style="padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background-color: blue; color: #fff;font-size: 40px; font-family: georgia; position: absolute; left: 100px; top: 310px; " onclick="irParaPagina('page2')">Download</button>
+<button style="padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background-color: blue; color: #fff;font-size: 35px; font-family: georgia; position: absolute; left: 385px; top: 310px; " onclick="irParaPagina('page3')">Sobre</button>
+<button style="padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background-color: blue; color: #fff;font-size: 40px; font-family: georgia; position: absolute; left: 155px; top: 400px; " onclick="irParaPagina('page4')">Documentação</button>
+
+            <div
+                id="bloco_12urbg9jm"
+                class="ryden-bloco-colisor"
+                data-x="245"
+                data-y="95"
+                data-tipo="normal"
+                data-extra=""
+                
+                onclick="
+                    const tipoBloco = this.dataset.tipo;
+                    const paramExtra = this.dataset.extra || '';
+
+                    if (tipoBloco === 'atualizar' && paramExtra) {
+                        const alvo = document.getElementById(paramExtra);
+
+                        if (alvo) {
+                            alvo.innerText = 'Atualizado via Bloco2D!';
+                        }
+                    }
+
+                    else if (
+                        tipoBloco === 'clique_pagina' &&
+                        paramExtra
+                    ) {
+                        document.querySelectorAll('.ryden-page')
+                            .forEach(function(pg) {
+                                pg.style.display = 'none';
+                            });
+
+                        const destino =
+                            document.getElementById(paramExtra);
+
+                        if (destino) {
+                            destino.style.display = 'block';
+                        }
+                    }
+
+                    else if (
+                        tipoBloco === 'clique_mostrar' &&
+                        paramExtra
+                    ) {
+                        const blocoOculto =
+                            document.getElementById(paramExtra);
+
+                        if (blocoOculto) {
+                            blocoOculto.style.display = 'block';
+                        }
+                    }
+
+                    if (this.dataset.execute) {
+                        try {
+                            new Function(this.dataset.execute).call(this);
+                        } catch (e) {
+                            console.error(
+                                'Erro no RydenScript Execute:',
+                                e
+                            );
+                        }
+                    }
+                "
+                style="
+                    position:absolute;
+                    width:180px;
+                    height:180px;
+                    left:245px;
+                    top:95px;
+                    background-image: url('https://raw.githubusercontent.com/maiomcorp-oss/RydenScript/refs/heads/main/RDS.ico'); background-size: cover;
+                    cursor:pointer;
+                    border:1.5px solid rgba(255,255,255,0.4);
+                    box-sizing:border-box;
+                    transition:transform 0.3s ease;
+                ">
+            </div>
+        <p style="margin: 5px 0; font-size: 15px; font-family: Georgia; position: absolute; left: 180px; top: 520px; ">Criador: Daniel Saldanha. Marca: Maiom Corp.</p>
+</div>
+<div id="page2" class="ryden-page" style="display: none; width: 100%; min-height: 100vh; padding: 10px; box-sizing: border-box;">
+<h1 style="margin: 5px 0; font-family: Arial; ">Baixar a versão mais recente v12.0.0</h1>
+<button class="btn" style="background:#28a745; color:#fff; font-weight:bold;" onclick="window.location.href='https://github.com/maiomcorp-oss/RydenScript/releases'">Ir para: https://github.com/maiomcorp-oss/RydenScript/releases</button>
+<button style="padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background-color: gray; color: #fff;" onclick="irParaPagina('page1')">voltar</button>
+</div>
+<div id="page3" class="ryden-page" style="display: none; width: 100%; min-height: 100vh; padding: 10px; box-sizing: border-box;">
+<h1 style="margin: 5px 0; ">Sobre o RydenScript</h1>
+<p style="margin: 5px 0; ">o RydenScript é uma linguagem de programação de proposito Geral focada na sintaxe Direta por meio de tags</p>
+<p style="margin: 5px 0; ">tags qual são semelhantes ao HTML mais que é utilizado tanto pra Front-end tanto pra back-end</p>
+<p style="margin: 5px 0; ">a linguagem não utiliza: (,[,{.</p>
+<p style="margin: 5px 0; ">A linguagem separa parâmetros por pipes: |</p>
+<h1 style="margin: 5px 0; ">O nome da linguagem carrega uma historia interessante</h1>
+<p style="margin: 5px 0; ">o nome "RydenScript" pegou a ideia de "javaScript" e "TypeScript" só que o nome Ryden foi modificado, Como o criador (Eu) gosto de hospedar sites e servidores , eu uso o Render um hospedador de servidores gratuito no plano grátis , oque o Render tem a ver com o RydenScript? ai que vem a historia, eu peguei o nome "Render" e modifiquei para "Ryden" depois juntei com "Script" resultado: RydenScript.</p>
+<h1 style="margin: 5px 0; ">RydenScript e suas eficiencias</h1>
+<p style="margin: 5px 0; ">o RydenScript é focado em produtividade</p>
+<p style="margin: 5px 0; ">Sintaxe legível e amigável para o Programador</p>
+<p style="margin: 5px 0; ">RydenScript da respostas Rapidas</p>
+<p style="margin: 5px 0; ">porque utiliza Tecnologias leves como a da Web</p>
+<p style="margin: 5px 0; ">feito inteiramente em HTML + CSS + JavaScript</p>
+<p style="margin: 5px 0; ">ele também utiliza PowerShell como forma de automação</p>
+<p style="margin: 5px 0; ">O PowerShell é utilizado no RydenScript como automação no Windows</p>
+<p style="margin: 5px 0; ">como uma forma do RydenScript ter poder ate no sistema operacional</p>
+<p style="margin: 5px 0; ">O RydenScript cria sites produtivos como este agora.</p>
+<p style="margin: 5px 0; ">RydenScript pode ser usado tanto pra criar sites tanto pra automação no sistema operacional e no desenvolvimento de Softwares.</p>
+<h1 style="margin: 5px 0; ">Esse site foi feito inteiramente em RydenScript!</h1>
+<p style="margin: 5px 0; ">eu não utilizei nenhuma outra Tecnologia extra</p>
+<p style="margin: 5px 0; ">Só RydenScript</p>
+<p style="margin: 5px 0; ">olha só que legal eu usei o RydenScript para criar o site oficial do RydenScript</p>
+<p style="margin: 5px 0; ">é o RydenScript construindo a própria vitrine.</p>
+<h1 style="margin: 5px 0; ">Arquitetura do RydenScript</h1>
+<p style="margin: 5px 0; ">o RydenScript utilizou o Winrar</p>
+<p style="margin: 5px 0; ">um aplicativo de empacotação de de arquivos</p>
+<p style="margin: 5px 0; ">o RydenScript usou para empacotar-se</p>
+<p style="margin: 5px 0; ">a arquitetura do RydenScript utiliza exatos arquivos</p>
+<p style="margin: 5px 0; ">"Editor.bat" esse arquivo é um arquivo de automação do Windows  o Prompt de Comando</p>
+<p style="margin: 5px 0; ">ele garante que o atalho do RydenScript apareça com a logo</p>
+<p style="margin: 5px 0; ">e abra outro arquivo chamado "RydenScript.html"</p>
+<p style="margin: 5px 0; ">o arquivo RydenScript HTML é o proprio RydenScript</p>
+<p style="margin: 5px 0; ">o editor.bat abre ele como app via Msedge utilizando o arquivo chamado "Msedge_proxy" ele é responsavel pelo PWA que transforma o RydenScript em um app</p>
+<p style="margin: 5px 0; ">mais antes de tudo na empacotação do Winrar ele solta esses arquivos no %localappdata% e ele inicia o arquivo "Carregar.bat"</p>
+<p style="margin: 5px 0; ">então na arquitetura do RydenScript cada arquivo depende do outro</p>
+<p style="margin: 5px 0; ">Uma separação importante o RydenScript.html é a estrutura que carrega o compilador e interpretador o Editor.bat não é o editor ele só deixa tudo pronto e correto.</p>
+<button style="padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background-color: gray; color: #fff;position: absolute; left: 10px; " onclick="irParaPagina('page1')">voltar</button>
+</div>
+<div id="page4" class="ryden-page" style="display: none; width: 100%; min-height: 100vh; padding: 10px; box-sizing: border-box;">
+<h1 style="margin: 5px 0; ">a Documentação inteira do RydenScript</h1>
+<button class="btn" style="background:#28a745; color:#fff; font-weight:bold;" onclick="window.location.href='https://github.com/maiomcorp-oss/RydenScript/'">Ir para: https://github.com/maiomcorp-oss/RydenScript/</button>
+<button style="padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background-color: gray; color: #fff;" onclick="irParaPagina('page1')">voltar</button>
+</div>
+
+<script>
+    function irParaPagina(idPagina) {
+        let paginas = document.querySelectorAll('.ryden-page');
+        paginas.forEach(p => p.style.display = 'none');
+        
+        let paginaAlvo = document.getElementById(idPagina);
+        if (paginaAlvo) {
+            paginaAlvo.style.display = 'block';
+        }
+        
+        setTimeout(() => {
+            let paginaAtual = document.getElementById(idPagina);
+            if (paginaAtual) {
+                let players = paginaAtual.querySelectorAll('.ryden-fisica-player');
+                players.forEach(p => {
+                    let xOriginal = p.dataset.xoriginal || p.dataset.x || '100';
+                    let yOriginal = p.dataset.yoriginal || p.dataset.y || '200';
+                    p.dataset.x = xOriginal;
+                    p.dataset.y = yOriginal;
+                    p.dataset.vx = '0';
+                    p.dataset.vy = '0';
+                    p.style.left = xOriginal + 'px';
+                    p.style.top = yOriginal + 'px';
+                    p.style.display = 'block';
+                });
+            }
+        }, 50);
+    }
+</script>
+
+      <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+      <script>
+        let peer = new Peer();
+        let connAtiva = null;
+        let historicoEl = document.getElementById('ryden-p2p-historico');
+
+        peer.on('open', (id) => {
+          let elId = document.getElementById('ryden-p2p-meu-id');
+          if (elId) elId.innerText = id;
+          if (historicoEl) historicoEl.innerHTML += '<br><span style="color: #00bcd4;">[P2P] Pronto! Seu ID foi gerado com sucesso.</span>';
+        });
+
+        peer.on('connection', (c) => {
+          connAtiva = c;
+          configurarConexao();
+          if (historicoEl) historicoEl.innerHTML += '<br><span style="color: #4caf50;">[P2P] Um usuario se conectou a você!</span>';
+        });
+
+        function conectarAmigo(idDestino) {
+          if (connAtiva) connAtiva.close();
+          connAtiva = peer.connect(idDestino);
+          configurarConexao();
+        }
+
+        function configurarConexao() {
+          if (!connAtiva) return;
+          connAtiva.on('open', () => {
+            if (historicoEl) historicoEl.innerHTML += '<br><span style="color: #4caf50;">[P2P] Conectado com sucesso ao peer!</span>';
+          });
+          connAtiva.on('data', (data) => {
+            if (historicoEl) {
+              historicoEl.innerHTML += `<br><span style="color: #ff9800;">[usuario]:</span> ${data}`;
+              historicoEl.scrollTop = historicoEl.scrollHeight;
+            }
+          });
+        }
+
+        function enviarP2PReal() {
+          let destino = document.getElementById('ryden-p2p-destino').value.trim();
+          let texto = document.getElementById('ryden-p2p-texto').value.trim();
+
+          if (!texto) return;
+
+          if (!connAtiva && destino) {
+            conectarAmigo(destino);
+            setTimeout(() => mandarMsgDireta(texto), 1000);
+            return;
+          }
+
+          mandarMsgDireta(texto);
+        }
+
+        function mandarMsgDireta(texto) {
+          if (connAtiva && connAtiva.open) {
+            connAtiva.send(texto);
+            if (historicoEl) {
+              historicoEl.innerHTML += `<br><span style="color: #00ff00;">[Você]:</span> ${texto}`;
+              historicoEl.scrollTop = historicoEl.scrollHeight;
+            }
+            document.getElementById('ryden-p2p-texto').value = '';
+          } else {
+            alert("Insira o ID do seu amigo no campo correspondente para conectar antes de enviar!");
+          }
+        }
+      </script>
+      </body></html>
