@@ -1265,6 +1265,8 @@ Projeto independente desenvolvido com tecnologias Web e ferramentas de automaç�
 | **v10.0.0** |Novas variaveis para Operações matematica e logica de programação, as Novidades estão no Release do RydenScript v10.0.0 |
 | **v11.0.0** | Atualização de Desempenho e de Documentação das Bibliotecas.|
 | **v12.0.0** | Configuração de idioma, título, favicon, fundo e ajuste automático de tela.|
+| **v0.1.0** | Não é uma versão do RydenScript, e sim um curso para iniciantes em RydenScript desenvolvido em RydenScript. |
+| **v12.1.0** | Adiciona a importação de arquivos .ryd, permitindo carregar e compilar projetos criados em outros editores, além de salvar o código-fonte na extensão oficial do RydenScript.|
 
 
 # 🛡️ RydenScript — Mitos e Equívocos
